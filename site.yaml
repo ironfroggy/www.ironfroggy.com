@@ -3,5 +3,5 @@ subtitle: "A web place for Calvin Spealman / ironfroggy"
 packs:
 - "jules:html5boilerplate"
 - "jules:lesscss"
-- "dir:base"
-- "dir:content"
+- "dir:static"
+- "dir:contents"

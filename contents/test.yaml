@@ -7,3 +7,4 @@ tags:
 - about me
 render: jinja2
 template: post.j2
+content: ~/me.git/on-my-personal-essay-project
