@@ -1,0 +1,16 @@
+{% extends "site_base.j2" %}
+
+{% block header_right %}
+    <h1>Recent Updates</h1>
+{% endblock %}
+
+{% block content %}
+    {% for bundle in engine.get_bundles_by("publish_time", "desc") %}
+        <article>
+            <h2><a href="{{ bundle.url() }}">{{ bundle.meta.title }}</a></h2>
+            <h4>{{ bundle.meta.publish_time }}</h4>
+            {{ bundle.content|truncate(255)|safe }}
+        </article>
+    {% endfor %}
+
+{% endblock %}

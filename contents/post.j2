@@ -1,0 +1,12 @@
+{% extends "site_base.j2" %}
+
+{% block header_right %}
+    <h1>{{ bundle.meta.title  }}</h1>
+    <h4>{{ bundle.meta.publish_time }}</h4>
+{% endblock %}
+
+{% block content %}
+    <article>
+        {{ bundle.content|safe }}
+    </article>
+{% endblock %}

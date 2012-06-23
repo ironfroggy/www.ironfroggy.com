@@ -1,0 +1,37 @@
+@background: #eee;
+@color: #333;
+
+body {
+    background: @background;
+    padding: 1em 3em;
+    color: @color;
+}
+
+h1,h2,h3,h4,h5,h6 { a { color: @color; } }
+h1,h2,h3,h4,h5,h6 { a:visited { color: @color; } }
+
+a {
+    text-decoration: none;
+}
+
+.col-25 {
+    width: 25%;
+    float: left;
+}
+
+.col-50 {
+    width: 50%;
+    float: left;
+}
+
+.list {
+    list-style: none;
+    padding: 0px;
+    font-size: larger;
+    
+    .list-extra {
+        font-size: smaller;
+        padding-left: 1em;
+        color: #444;
+    }
+}

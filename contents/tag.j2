@@ -1,0 +1,13 @@
+{% extends "site_base.j2" %}
+
+{% block header_right %}
+    <h1><em>{{ bundle.tagname }}</em> tagged content</h1>
+{% endblock %}
+
+{% block content %}
+    <ul>
+    {% for tagged_bundle in bundle.tagged %}
+        <li><a href="{{ tagged_bundle.url() }}">{{ tagged_bundle.meta.title }}</a></li>
+    {% endfor %}
+    </ul>
+{% endblock %}
