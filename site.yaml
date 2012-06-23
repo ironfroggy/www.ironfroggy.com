@@ -1,7 +1,8 @@
 title: "Developing Upwards"
-subtitle: "A web place for Calvin Spealman / ironfroggy"
+subtitle: "A web place for Calvin Spealman"
 packs:
 - "jules:html5boilerplate"
 - "jules:lesscss"
 - "dir:static"
 - "dir:contents"
+google_analytics_id: "UA-953592-18"

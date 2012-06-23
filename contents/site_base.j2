@@ -25,13 +25,11 @@
     <div class=col-25>
         <h3>Posts</h3>
         <ul class=list>
-        {% for bundle in engine.get_bundles_by("publish_time", "desc", 5) %}
-            {% if bundle.meta.status == "published" %}
-                <li>
-                    <a href="{{ bundle.url() }}">{{ bundle.meta.title }}</a><br />
-                    <em class=list-extra>{{ bundle.meta.publish_time }}</em>
-                </li>
-            {% endif %}
+        {% for bundle in engine.get_bundles_by("publish_time", "desc", 5, status="published") %}
+            <li>
+                <a href="{{ bundle.url() }}">{{ bundle.meta.title }}</a><br />
+                <em class=list-extra>{{ bundle.meta.publish_time }}</em>
+            </li>
         {% endfor %}
         </ul>
 

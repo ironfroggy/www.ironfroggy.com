@@ -4,13 +4,24 @@
     <h1>Recent Updates</h1>
 {% endblock %}
 
+{% block mid_column %}
+    <h3>Other places online</h3>
+    <ul>
+        <li><a href="http://twitter.com/ironfroggy">@ironfroggy</a>
+            <em class=list-extra>Ramblings and tweets both technical and personal</em>
+        <li><a href="http://github.com/ironfroggy">github.com/ironfroggy</a>
+            <em class=list-extra>My open source projects are all here</em>
+        <li><a href="http://techblog.ironfroggy.com/">My tech blog</a>
+            <em class=list-extra>This may merge in the future</em>
+    </ul>
+{% endblock %}
+
 {% block content %}
-    {% for bundle in engine.get_bundles_by("publish_time", "desc") %}
+    {% for bundle in engine.get_bundles_by("publish_time", "desc", status="published") %}
         <article>
-            <h2><a href="{{ bundle.url() }}">{{ bundle.meta.title }}</a></h2>
+            <h3><a href="{{ bundle.url() }}">{{ bundle.meta.title }}</a></h3>
             <h4>{{ bundle.meta.publish_time }}</h4>
             {{ bundle.content|truncate(255)|safe }}
         </article>
     {% endfor %}
-
 {% endblock %}

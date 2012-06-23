@@ -32,6 +32,9 @@ def newpost(title=None, src=None):
             if src and os.path.exists(src):
                 f.writelines(open(src))
 
+def clean():
+    local('find . -name "*.swp" -delete')
+
 def build():
     local('jules build -f')
 
