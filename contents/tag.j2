@@ -6,8 +6,8 @@
 
 {% block content %}
     <ul>
-    {% for tagged_bundle in bundle.tagged %}
-        <li><a href="{{ tagged_bundle.url() }}">{{ tagged_bundle.meta.title }}</a></li>
+    {% for tagged_bundle in bundle.get_bundles_by("title", "desc", status="published") %}
+        <li><a href="{{ tagged_bundle.url() }}">{{ tagged_bundle.meta.title|title }}</a></li>
     {% endfor %}
     </ul>
 {% endblock %}
