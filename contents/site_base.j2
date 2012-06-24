@@ -23,7 +23,7 @@
 
 {% block main %}
 
-    <div class=col-25>
+    <div class=left-column>
         <h3>Posts</h3>
         <ul class=list>
         {% for bundle in engine.get_bundles_by("publish_time", "desc", 5, status="published") %}
@@ -42,13 +42,13 @@
         </ul>
     </div>
 
-    <div class=col-25>
+    <div class=mid-column>
         {% block mid_column %}
             &nbsp;
         {% endblock %}
     </div>
 
-    <div class=col-50>
+    <div class=right-column>
         {% block content %}
         {% endblock %}
     </div>

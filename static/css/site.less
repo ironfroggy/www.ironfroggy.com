@@ -1,10 +1,51 @@
 @background: #eee;
 @color: #333;
+@headerBackground: #222;
+@headerColor: #eee;
+
+.pagePadding(@pad: 10px) {
+    padding: @pad @pad*3;
+}
 
 body {
     background: @background;
-    padding: 1em 3em;
     color: @color;
+}
+
+header {
+    background: @headerBackground;
+    color: @headerColor;
+
+    h1,h2,h3,h4,h5,h6 { a { color: @headerColor; } }
+    h1,h2,h3,h4,h5,h6 { a:visited { color: @headerColor; } }
+
+    .pagePadding;
+
+    box-shadow: 0px 10px 10px #888888;
+    h1 {
+        text-shadow: 0px 0px 3px @headerColor/2;
+    }
+}
+
+#main {
+    .pagePadding;
+
+    .left-column {
+        .col-25;
+    }
+    .mid-column {
+        .col-25;
+    }
+    .right-column {
+        .col-50;
+    }
+}
+
+footer {
+    color: #444;
+    font-size: smaller;
+    clear: both;
+    .pagePadding;
 }
 
 h1,h2,h3,h4,h5,h6 { a { color: @color; } }
@@ -60,8 +101,3 @@ h3 + h4 {
     bottom: 0px;
 }
 
-footer {
-    color: #444;
-    font-size: smaller;
-    clear: both;
-}
