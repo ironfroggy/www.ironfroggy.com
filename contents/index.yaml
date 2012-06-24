@@ -1,3 +1,2 @@
-title: This is my test site
 render: jinja2
 template: index.j2
