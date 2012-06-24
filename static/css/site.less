@@ -83,12 +83,29 @@ ul.list {
     }
 }
 
-article h4 {
-    visibility: hidden;
+.transition (@prop: all, @time: 1s, @ease: linear) {
+    -webkit-transition: @prop @time @ease;
+    -moz-transition: @prop @time @ease;
+    -o-transition: @prop @time @ease;
+    -ms-transition: @prop @time @ease;
+    transition: @prop @time @ease;
 }
-article:hover h4 {
-    color: #666;
-    visibility: visible;
+
+article {
+    &+article {
+        margin-top: 2em;
+    }
+    
+    h4 {
+        opacity: 0.0;
+        .transition(all, 0.5s);
+        margin-bottom: 1em;
+    }
+    &:hover h4 {
+        color: #666;
+        opacity: 1.0;
+        .transition(all, 0.5s)
+    }
 }
 
 h3 + h4 {
