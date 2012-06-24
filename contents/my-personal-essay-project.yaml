@@ -3,8 +3,7 @@ publish_time: !!timestamp '2012-06-23 10:00:00'
 created_time: !!timestamp '2012-04-07 21:00:00'
 status: published
 tags:
-- essay
-- about me
+- musing
 render: jinja2
 template: post.j2
 content: ~/me.git/on-my-personal-essay-project
