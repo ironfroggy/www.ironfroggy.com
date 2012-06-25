@@ -1,7 +1,11 @@
 {% extends "site_base.j2" %}
 
 {% block header_right %}
-    <h1>{{ bundle.meta.title  }}</h1>
+    {% if bundle.meta.link_to %}
+        <h1><a href="{{ bundle.meta.link_to }}">{{ bundle.meta.title  }} <span class=link-arrow>&#x21A6;</span></a></h1>
+    {% else %}
+        <h1>{{ bundle.meta.title  }}</h1>
+    {% endif %}
     <h4>{{ bundle.meta.publish_time }}</h4>
 {% endblock %}
 

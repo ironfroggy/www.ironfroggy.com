@@ -53,6 +53,14 @@ h1,h2,h3,h4,h5,h6 { a:visited { color: @color; } }
 
 a {
     text-decoration: none;
+    &:hover .link-arrow {
+        .transition(all, 0.5s);
+        text-shadow: 800px 0px 5px #aa3;
+    }
+    .link-arrow {
+        .transition(none, 0);
+        text-shadow: 0px 0px 0px #aa3;
+    }
 }
 
 .col-25 {
