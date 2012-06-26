@@ -2,9 +2,9 @@
 
 {% block header_right %}
     {% if bundle.meta.link_to %}
-        <h1><a href="{{ bundle.meta.link_to }}">{{ bundle.meta.title  }} <span class="glyph general">u</span></a></h1>
+        <h1 class="title title-link"><a href="{{ bundle.meta.link_to }}" target="_new">{{ bundle.meta.title  }} <span class="glyph general-enclosed">u</span></a></h1>
     {% else %}
-        <h1>{{ bundle.meta.title  }}</h1>
+        <h1 class=title>{{ bundle.meta.title  }}</h1>
     {% endif %}
     <h4>{{ bundle.meta.publish_time }}</h4>
 {% endblock %}
