@@ -5,6 +5,7 @@ packs:
 - "jules:lesscss"
 - "jules:atom"
 - "jules:pygments"
+- "jules:foundation-icons-general"
 - "dir:static"
 - "dir:contents"
 google_analytics_id: "UA-953592-18"
