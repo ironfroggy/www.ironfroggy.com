@@ -11,17 +11,17 @@
     More info at: http://lesselements.com
 -----------------------------------------------------*/
 
-.gradient(@color: #F5F5F5, @start: #EEE, @stop: #FFF) {
+.gradient(@color: #F5F5F5, @start: #EEE, @stop: #FFF, @from: left bottom, @to: left top) {
   background: @color;
   background: -webkit-gradient(linear,
-                               left bottom,
-                               left top,
+                               @from,
+                               @to,
                                color-stop(0, @start),
                                color-stop(1, @stop));
-  background: -ms-linear-gradient(bottom,
+  background: -ms-linear-gradient(@from,
                                   @start,
                                   @stop);
-  background: -moz-linear-gradient(center bottom,
+  background: -moz-linear-gradient(@from,
                                    @start 0%,
                                    @stop 100%);
 }
