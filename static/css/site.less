@@ -1,5 +1,10 @@
-@background: #eee;
+@import "elements.less";
+
+
+@background: #ffffe8;
+@backgroundFrom: #dcdcb8;
 @color: #333;
+@link: #aa6650;
 @headerBackground: #222;
 @headerColor: #eee;
 
@@ -8,11 +13,33 @@
 }
 
 body {
-    background: @background;
+    .gradient(@background, @backgroundFrom, @background, left top, right top);
     color: @color;
 
     .glyph {
         font-size: inherit;
+    }
+
+    a {
+        color: @link;
+        text-decoration: none;
+        &:visited {
+            color: darken(@link, 10%);
+        }
+        &:active {
+            color: lighten(@link, 20%);
+        }
+        &:hover {
+            color: lighten(@link, 10%);
+            .link-arrow {
+                .transition(all, 0.5s);
+                text-shadow: 800px 0px 5px #aa3;
+            }
+        }
+        .link-arrow {
+            .transition(none, 0);
+            text-shadow: 0px 0px 0px #aa3;
+        }
     }
 }
 
@@ -43,9 +70,7 @@ header {
     }
     .mid-column {
         .col-25;
-        &>p {
-            margin: 0 1em;
-        }
+        margin: 0.5em inherit;
     }
     .right-column {
         .col-50;
@@ -62,20 +87,9 @@ footer {
 h1,h2,h3,h4,h5,h6 { a { color: @color; } }
 h1,h2,h3,h4,h5,h6 { a:visited { color: @color; } }
 
-a {
-    text-decoration: none;
-    &:hover .link-arrow {
-        .transition(all, 0.5s);
-        text-shadow: 800px 0px 5px #aa3;
-    }
-    .link-arrow {
-        .transition(none, 0);
-        text-shadow: 0px 0px 0px #aa3;
-    }
-}
-
 .col-25 {
-    width: 25%;
+    width: 23%;
+    margin-right: 2%;
     float: left;
     position: relative;
 }
