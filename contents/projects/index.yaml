@@ -1,0 +1,4 @@
+title: Projects
+status: published
+template: projects.j2
+render: jinja2
