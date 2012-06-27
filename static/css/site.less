@@ -41,6 +41,10 @@ body {
             text-shadow: 0px 0px 0px #aa3;
         }
     }
+
+    h1,h2,h3,h4,h5,h6 { a { color: @color; } }
+    h1,h2,h3,h4,h5,h6 { a:visited { color: @color; } }
+    h1,h2,h3,h4,h5,h6 { a:hover { color: lighten(@link, 20%); } }
 }
 
 header {
@@ -49,6 +53,7 @@ header {
 
     h1,h2,h3,h4,h5,h6 { a { color: @headerColor; } }
     h1,h2,h3,h4,h5,h6 { a:visited { color: @headerColor; } }
+    h1,h2,h3,h4,h5,h6 { a:hover { color: lighten(@link, 20%); } }
 
     .pagePadding;
 
@@ -83,9 +88,6 @@ footer {
     clear: both;
     .pagePadding;
 }
-
-h1,h2,h3,h4,h5,h6 { a { color: @color; } }
-h1,h2,h3,h4,h5,h6 { a:visited { color: @color; } }
 
 .col-25 {
     width: 23%;
@@ -157,3 +159,7 @@ h3 + h4 {
     bottom: 0px;
 }
 
+.highlight {
+    padding: 0.25em 1.5em;
+    margin: 0.5em 0;
+}
