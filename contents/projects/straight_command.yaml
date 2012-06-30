@@ -1,2 +1,5 @@
 title: straight.command
 type: project
+render: jinja2
+template: post.j2
+link_to: http://github.com/ironfroggy/straight.command
