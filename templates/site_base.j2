@@ -29,7 +29,7 @@
         {% if bundle.key != "index" %}
             <h3>Posts</h3>
             <ul class=list>
-            {% for bundle in engine.get_bundles_by("publish_time", "desc", 5, status="published") %}
+            {% for bundle in engine.get_bundles_by("publish_time", "desc", 5, status="published", type="post") %}
                 <li>
                     <a href="{{ bundle.url() }}">{{ bundle.meta.title|title }}</a><br />
                     <em class=list-extra>{{ bundle.meta.publish_time }}</em>

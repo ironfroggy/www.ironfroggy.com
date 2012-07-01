@@ -1,0 +1,12 @@
+title: About www.ironfroggy.com
+render: jinja2
+template: post.j2
+disqus_disable: !!bool true
+content: |
+    This is my website. I don't know why I felt I should have one. I have a few blogs, both
+    public and anonymous. I have tumblr accounts for sharing things I find interesting and
+    my programming blog with a fairly good following. I suppose I still feel like I should
+    a place online that really belongs to me. It is a little silly, but until I had this I
+    felt pretty uneasy writing anything. Where was it going? Who am I trusting with my content?
+
+    At least it is fun to tinker on.

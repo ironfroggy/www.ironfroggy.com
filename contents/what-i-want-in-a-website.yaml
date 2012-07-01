@@ -2,6 +2,7 @@ title: "What I want in a Website"
 publish_time: !!timestamp '2012-06-23 11:40:00'
 created_time: !!timestamp '2012-03-04 22:23:00'
 status: published
+type: post
 tags:
 - musing
 render: jinja2
