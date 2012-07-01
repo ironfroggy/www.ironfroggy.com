@@ -31,7 +31,7 @@
             <ul class=list>
             {% for bundle in engine.get_bundles_by("publish_time", "desc", 5, status="published") %}
                 <li>
-                    <a href="{{ bundle.url() }}">{{ bundle.meta.title }}</a><br />
+                    <a href="{{ bundle.url() }}">{{ bundle.meta.title|title }}</a><br />
                     <em class=list-extra>{{ bundle.meta.publish_time }}</em>
                 </li>
             {% endfor %}

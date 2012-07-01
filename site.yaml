@@ -6,6 +6,7 @@ packs:
 - "jules:atom"
 - "jules:pygments"
 - "jules:foundation-icons-general-enclosed"
+- "jules:foundation-icons-general"
 - "dir:templates"
 - "dir:static"
 - "dir:contents"
