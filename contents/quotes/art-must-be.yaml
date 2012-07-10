@@ -1,0 +1,10 @@
+type: quote
+status: published
+content: |
+    Art must be anything you can get away with.
+template: post.j2
+render: jinja2
+attribution:
+- name: Suicide Kings
+  url: http://www.suicidekingsspokenword.com/
+- Suicide Note
