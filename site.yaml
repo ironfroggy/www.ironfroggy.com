@@ -16,3 +16,9 @@ default_author: "Calvin Spealman <ironfroggy@gmail.com>"
 tag_path: "tags/{tag}/"
 disqus:
     enabled_default: true
+ignore:
+- "*.swp"
+- "*.swo"
+- "~*"
+bundle_defaults:
+    output_ext: ""

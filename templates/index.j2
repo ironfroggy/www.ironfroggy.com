@@ -25,7 +25,7 @@
 {% endblock %}
 
 {% block content %}
-    {% for bundle in engine.get_bundles_by("publish_time", "desc", status="published", type="post") %}
+    {% for bundle in engine.get_bundles_by("publish_time", "desc", status="published") %}
         <article class=tease>
             <h3><a href="{{ bundle.url() }}">{{ bundle.meta.title|title }}</a></h3>
             <h4>{{ bundle.meta.publish_time }}
