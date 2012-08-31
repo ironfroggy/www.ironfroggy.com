@@ -1,0 +1,18 @@
+content: "Just a thought. We have so many tools for, essentially, ranking content.\
+  \ \n\nWe vote on Reddit, like on facebook, plus one on Google. We pretend this\n\
+  stuff is (relatively) new, but aren't they all just non-passive hit counters?\n\
+  Maybe a return to the beginnings would be nice. But, simply loading a page\nisn't\
+  \ enough.\n\nMy proposal: the Read Counter.\n\nAt the end of a page, the Read Counter\
+  \ would trigger simply by scrolling\ninto view. It would be a rough measurement\
+  \ of traffic, and as a simple\nbonus would avoid counting people who opened the\
+  \ page but don't seem to\nhave actually read the content.\n\nSimple, but useful.\
+  \ Passive, but meaningful.\n"
+publish_time: 2012-08-28 21:12:00
+render: jinja2
+status: published
+tags:
+- idea
+- web
+template: post.j2
+title: Read Counter, an Idea
+updated_time: 2012-08-28 21:12:00
