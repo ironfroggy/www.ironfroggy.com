@@ -18,3 +18,8 @@ def build():
 def deploy():
     build()
     rsync_project('/domains/www.ironfroggy.com/default/', '_build/')
+
+def update():
+    clean()
+    local('git pull')
+    build()
