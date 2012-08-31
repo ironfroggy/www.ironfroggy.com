@@ -14,3 +14,5 @@ How will I do code stuff?
         var z = x + y;
         return z / 2;
     }
+
+:doclink:`what-i-want-in-a-website`

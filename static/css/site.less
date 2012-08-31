@@ -131,13 +131,17 @@ article {
         margin-top: 2em;
     }
     
-    h4 {
+    .peak {
         opacity: 0.0;
+    }
+    h4 {
         .transition(all, 0.5s);
         margin-bottom: 1em;
     }
     &:hover h4 {
         color: #666;
+    }
+    &:hover .peak {
         opacity: 1.0;
         .transition(all, 0.5s)
     }
@@ -146,6 +150,9 @@ article {
 article.tease {
     .tags {
         margin-left: 2em;
+    }
+    .read-more {
+        float: right;
     }
 }
 

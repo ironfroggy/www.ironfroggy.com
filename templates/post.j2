@@ -6,7 +6,11 @@
     {% else %}
         <h1 class=title>{{ bundle.meta.title  }}</h1>
     {% endif %}
-    <h4>{{ bundle.meta.publish_time }}</h4>
+    <h4>{{ bundle.publish_time }}
+    {% if bundle.updated_time and bundle.updated_time != bundle.publish_time %}
+        , updated {{ bundle.updated_time }}
+    {% endif %}
+    </h4>
 {% endblock %}
 
 {% block content %}
