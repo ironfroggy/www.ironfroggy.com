@@ -13,6 +13,25 @@
     </h4>
 {% endblock %}
 
+{% block mid_column %}
+    {% if bundle.meta.publish_time %}
+        <h4>Published {{ bundle.meta.publish_time.strftime('%Y/%m/%d') }}</h4>
+    {% endif %}
+    {% if bundle.meta.updated_time and bundle.meta.updated_time.strftime('%Y/%m/%d') != bundle.meta.publish_time.strftime('%Y/%m/%d') %}
+        <h4>Updated {{ bundle.meta.updated_time.strftime('%Y/%m/%d') }}</h4>
+    {% endif %}
+    {% if bundle.tags %}
+        <h3>Tags</h3>
+        <ul class=list>
+        {% for tag, tag_bundle in engine.context.tags.items() %}
+            {% if tag in bundle.tags %}
+                <li><a href="{{ tag_bundle.url() }}"> {{ tag }}</a></li>
+            {% endif %}
+        {% endfor %}
+        </ul>
+    {% endif %}
+{% endblock %}
+
 {% block content %}
     <article>
         {{ bundle.content|safe }}

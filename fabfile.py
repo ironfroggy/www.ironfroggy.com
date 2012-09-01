@@ -11,6 +11,7 @@ env.hosts = ['www.ironfroggy.com']
 
 def clean():
     local('find . -name "*.swp" -delete')
+    local('rm -fr _build/*')
 
 def build():
     local('jules build -f')
