@@ -9,3 +9,4 @@ tags:
 render: jinja2
 template: post.j2
 content: "~/me.git/what-i-want-in-a-website"
+series: Road to Writing

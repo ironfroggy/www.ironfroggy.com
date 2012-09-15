@@ -1,6 +1,10 @@
 {% extends "site_base.j2" %}
 
 {% block header_right %}
+    {% set in_these_series = bundle.meta['collections'].get('series', {}) %}
+    {% if in_these_series %}
+        <em>Part of {% for series in in_these_series %}"{{ series.value }}"{% if not loop.last %}, {% endif %}{% endfor %}</em>
+    {% endif %}
     {% if bundle.meta.link_to %}
         <h1 class="title title-link"><a href="{{ bundle.meta.link_to }}" target="_new">{{ bundle.meta.title  }} <span class="glyph general">u</span></a></h1>
     {% else %}
@@ -31,7 +35,7 @@
         </ul>
     {% endif %}
     {% for series in bundle.meta['collections'].get('series', {}) %}
-        <h3>Series: {{ series }}</h3>
+        <h3>Series: {{ series.value }}</h3>
         <ul class=list>
         {% for series_member in series.values()|sortbundles('title') %}
             <li><a href="{{ series_member.url() }}">{{ series_member.meta.title|title }}</a></li>

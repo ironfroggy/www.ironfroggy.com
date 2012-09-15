@@ -2,12 +2,12 @@
 
 {% block extra_head %}
     {{ super() }}
-    <link href="http://{{ config.domain }}/tags/{{ bundle.tagname }}.xml" type="application/atom+xml" rel="alternate" title="www.ironfroggy.com/tags/{{ bundle.tagname }} ATOM feed" />
+    <link href="http://{{ config.domain }}/feeds/{{ bundle.key }}/atom.xml" type="application/atom+xml" rel="alternate" title="www.ironfroggy.com/feeds/{{ bundle.key }} ATOM feed" />
 {% endblock %}
 
 {% block header_right %}
-    <h1><em>{{ bundle.tagname }}</em> tagged content</h1>
-    <a href="http://{{ config.domain }}/tags/{{ bundle.tagname }}.xml"><img src="/images/rss_icon.png" /></a>
+    <h1><em>{{ bundle.value }}</em> tagged content</h1>
+    <a href="http://{{ config.domain }}/feeds/{{ bundle.key }}/atom.xml"><img src="/images/rss_icon.png" /></a>
 {% endblock %}
 
 {% block content %}
@@ -23,7 +23,9 @@
                 </span>
                 {% endif %}
             </h4>
-            {{ bundle.content|truncate(255)|safe }}
+            {% if bundle.content %}
+                {{ bundle.content|truncate(255)|safe }}
+            {% endif %}
             <a class="peak read-more" href="{{ bundle.url() }}">more</a>
         </article>
     {% endfor %}

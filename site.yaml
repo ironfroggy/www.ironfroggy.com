@@ -35,3 +35,6 @@ collections:
         group_by:
             is: series
         order: publish_time
+        meta:
+            render: jinja2
+            template: series.j2
