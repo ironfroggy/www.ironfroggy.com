@@ -22,3 +22,16 @@ ignore:
 - "~*"
 bundle_defaults:
     output_ext: ""
+collections:
+    tags:
+        match:
+            status: published
+        group_by:
+            in: tags
+        meta:
+            render: jinja2
+            template: tag.j2
+    series:
+        group_by:
+            is: series
+        order: publish_time

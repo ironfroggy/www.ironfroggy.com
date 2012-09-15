@@ -1,7 +1,13 @@
 {% extends "site_base.j2" %}
 
+{% block extra_head %}
+    {{ super() }}
+    <link href="http://{{ config.domain }}/tags/{{ bundle.tagname }}.xml" type="application/atom+xml" rel="alternate" title="www.ironfroggy.com/tags/{{ bundle.tagname }} ATOM feed" />
+{% endblock %}
+
 {% block header_right %}
     <h1><em>{{ bundle.tagname }}</em> tagged content</h1>
+    <a href="http://{{ config.domain }}/tags/{{ bundle.tagname }}.xml"><img src="/images/rss_icon.png" /></a>
 {% endblock %}
 
 {% block content %}

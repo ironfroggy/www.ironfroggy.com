@@ -1,4 +1,4 @@
-title: "test 1 2 3"
+title: "test Z"
 publish_time: !!timestamp '2012-06-24 15:24:00'
 created_time: !!timestamp '2012-03-04 22:23:00'
 status: draft
@@ -7,3 +7,4 @@ tags:
 render: jinja2
 template: post.j2
 link_to: http://google.com
+series: test

@@ -30,6 +30,20 @@
         {% endfor %}
         </ul>
     {% endif %}
+    {% for series in bundle.meta['collections'].get('series', {}) %}
+        <h3>Series: {{ series }}</h3>
+        <ul class=list>
+        {% for series_member in series.values()|sortbundles('title') %}
+            <li><a href="{{ series_member.url() }}">{{ series_member.meta.title|title }}</a></li>
+        {% endfor %}
+        </ul>
+    {% endfor %}
+    <h3>Tags</h3>
+    <ul class=list>
+    {% for tag in bundle.meta['collections'].get('tags', {}) %}
+        <li><a href="{{ tag.url() }}">{{ tag.value }}</a></li>
+    {% endfor %}
+    </ul>
 {% endblock %}
 
 {% block content %}
