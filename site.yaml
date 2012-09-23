@@ -13,7 +13,6 @@ packs:
 google_analytics_id: "UA-953592-18"
 domain: "www.ironfroggy.com"
 default_author: "Calvin Spealman <ironfroggy@gmail.com>"
-tag_path: "tags/{tag}/"
 disqus:
     enabled_default: true
 ignore:
@@ -25,6 +24,7 @@ bundle_defaults:
     render: jinja2
 collections:
     tags:
+        key_pattern: "{value}"
         match:
             status: published
         group_by:
