@@ -39,3 +39,5 @@ collections:
         meta:
             render: jinja2
             template: series.j2
+feed_campaign:
+    name: "Feed Subscribers"
