@@ -22,6 +22,7 @@ ignore:
 - "~*"
 bundle_defaults:
     output_ext: ""
+    render: jinja2
 collections:
     tags:
         match:

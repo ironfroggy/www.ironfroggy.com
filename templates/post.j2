@@ -6,9 +6,12 @@
         <em>Part of {% for series in in_these_series %}"{{ series.value }}"{% if not loop.last %}, {% endif %}{% endfor %}</em>
     {% endif %}
     {% if bundle.meta.link_to %}
-        <h1 class="title title-link"><a href="{{ bundle.meta.link_to }}" target="_new">{{ bundle.meta.title  }} <span class="glyph general">u</span></a></h1>
+        <h1 class="title title-link"><a href="{{ bundle.meta.link_to }}" target="_new">{{ bundle.meta.title|title  }} <span class="glyph general">u</span></a></h1>
     {% else %}
-        <h1 class=title>{{ bundle.meta.title  }}</h1>
+        <h1 class=title>{{ bundle.meta.title|title  }}</h1>
+    {% endif %}
+    {% if bundle.meta.subtitle %}
+        <h3>{{ bundle.meta.subtitle }}</h3>
     {% endif %}
     <h4>{{ bundle.publish_time }}
     {% if bundle.updated_time and bundle.updated_time != bundle.publish_time %}
@@ -23,16 +26,6 @@
     {% endif %}
     {% if bundle.meta.updated_time and bundle.meta.updated_time.strftime('%Y/%m/%d') != bundle.meta.publish_time.strftime('%Y/%m/%d') %}
         <h4>Updated {{ bundle.meta.updated_time.strftime('%Y/%m/%d') }}</h4>
-    {% endif %}
-    {% if bundle.tags %}
-        <h3>Tags</h3>
-        <ul class=list>
-        {% for tag, tag_bundle in engine.context.tags.items() %}
-            {% if tag in bundle.tags %}
-                <li><a href="{{ tag_bundle.url() }}"> {{ tag }}</a></li>
-            {% endif %}
-        {% endfor %}
-        </ul>
     {% endif %}
     {% for series in bundle.meta['collections'].get('series', {}) %}
         <h3>Series: {{ series.value }}</h3>
