@@ -16,7 +16,7 @@ However, The energy is shifting. Browsers are evolving. Computer sales are getti
 Python is Expensive On Mobile
 -----------------------------
 
-A lot of people who are interested in python, but hesitent, worry about the overhead of a dynamic language. Things like dynamic displatch and the millions of dictionary lookups per second can burn through CPU cycles. The advice has always been, "Buy more or better hardware. Iron costs as much as the developer time you'll loose to a more difficult language."
+A lot of people who are interested in python, but hesitent, worry about the overhead of a dynamic language. Things like dynamic displatch and the millions of dictionary lookups per second can burn through CPU cycles. The advice has always been, "Buy more or better hardware. Iron costs as much as the developer time you'll lose to a more difficult language."
 
 These problems are only made worse by our untethered devices reliance on batteries. Those CPU cycles cost energy, and any tool that saps more battery life is going to be at a disadvantage for mindshare.
 
@@ -42,7 +42,7 @@ Well, we've seen Python in a few instances like this. The most notable have been
 
 The loss here is only being made worse by my points above. Games are moving in two directions: into browsers and into mobile devices. Increasingly, this is a concern even when developing a desktop game. You need to build your product on something you know will help you move into the spaces you'll need to really grab the full potential of revenue.
 
-Again, this is important not because you want to make games, but because lots of game development attracts really talented, smart developers and we're loosing them to ActionScript and C#. This *matters*.
+Again, this is important not because you want to make games, but because lots of game development attracts really talented, smart developers and we're losing them to ActionScript and C#. This *matters*.
 
 Why Does This Matter?
 ---------------------
