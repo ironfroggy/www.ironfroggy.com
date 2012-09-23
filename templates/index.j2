@@ -40,12 +40,14 @@
                 </span>
                 {% endif %}
             </h4>
-            {% if loop.first %}
-                {{ bundle.content|truncate(500)|striptags }}
-            {% else %}
-                {{ bundle.content|truncate(255)|striptags }}
-            {% endif %}
-            <a class="peak read-more" href="{{ bundle.url() }}">more</a>
+            <div class=tease-text>
+                {% if loop.first %}
+                    {{ bundle.content|truncate(500) }}
+                {% else %}
+                    {{ bundle.content|truncate(255) }}
+                {% endif %}
+                <a class="peak read-more" href="{{ bundle.url() }}">more</a>
+            </div>
         </article>
     {% endfor %}
 {% endblock %}
