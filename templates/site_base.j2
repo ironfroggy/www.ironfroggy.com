@@ -10,15 +10,15 @@
 {% endblock %}
 
 {% block header %}
-    <div class=col-50>
+    <div class=header-page>
+        {% block header_right %}
+        {% endblock %}
+    </div>
+    <div class=header-site>
         <h1><a href="/">{{ config.title }}</a></h1>
         {% if config.subtitle %}
             <h3>{{ config.subtitle }}</h3>
         {% endif %}
-    </div>
-    <div class=col-50>
-        {% block header_right %}
-        {% endblock %}
     </div>
     <div style="clear: both;">
     </div>
