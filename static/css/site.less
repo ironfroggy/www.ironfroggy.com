@@ -88,6 +88,34 @@ header {
     }
 }
 
+@media (min-width: 401px) and (max-width: 800px) {
+    #main {
+        .left-column {
+            .col-50;
+        }
+        .mid-column {
+            .col-50;
+        }
+        .right-column {
+            .col-100;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    #main {
+        .left-column {
+            .col-100;
+        }
+        .mid-column {
+            .col-100;
+        }
+        .right-column {
+            .col-100;
+        }
+    }
+}
+
 footer {
     color: #444;
     font-size: smaller;
@@ -98,13 +126,18 @@ footer {
 .col-25 {
     width: 23%;
     margin-right: 2%;
-    float: left;
+    float: right;
     position: relative;
 }
 
 .col-50 {
-    width: 50%;
-    float: left;
+    width: 48%;
+    margin-right: 2%;
+    float: right;
+}
+
+.col-100 {
+    width: 100%;
 }
 
 ul.list {

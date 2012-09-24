@@ -27,6 +27,17 @@
 {% block main %}
     <a id=fork-me href="https://github.com/ironfroggy/www.ironfroggy.com"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
 
+    <div class=right-column>
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <div class=mid-column>
+        {% block mid_column %}
+            &nbsp;
+        {% endblock %}
+    </div>
+
     <div class=left-column>
         {% if bundle.key != "index" %}
             <h3>Posts</h3>
@@ -52,17 +63,6 @@
         </ul>
 
         <h3><a href="{{ engine.get_bundle(key="about").url() }}">About <span class="glyph general">u</span></a></h3>
-    </div>
-
-    <div class=mid-column>
-        {% block mid_column %}
-            &nbsp;
-        {% endblock %}
-    </div>
-
-    <div class=right-column>
-        {% block content %}
-        {% endblock %}
     </div>
 
 {% endblock %}
