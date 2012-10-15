@@ -1,0 +1,31 @@
+title: "Wishlist"
+publish_time: !!timestamp '2012-10-15 12:00:00'
+updated_time: !!timestamp '2012-10-15 12:00:00'
+created_time: !!timestamp '2012-10-15 12:00:00'
+status: published
+type: post
+rnder: jinja2
+template: post.j2
+series: My Evolving Wishlist
+
+notes: |
+    What I really want here is a thing where I can do a series of posts, and each post also changes
+    the current list. How would that work? I could have each post be either the addition of one or
+    removal of one from teh list. Maybe they shouldn't be posts, necessarily.
+
+    How should this look and how would it work in Jules? Might take some thinking over a little time.
+
+    One obvious way would be to do something like wishlist/wish-NNN.rst and somehow wishlist.yaml
+    tells Jules to look for these and compile them into a list. It could use collections, somehow,
+    to group them and render them inot the page, just like tags or series pages, only they wouldn't,
+    themselves, render their own pages. Or, maybe they could, optionally?
+
+    Then, changes to the wishlist could be compiled into posts, which would just show the changes
+    that got made. I would start a branch, edit the items in the list, and then actually do script
+    to compare the current and the branch and compile a change post. Alternatively, I could just
+    have each change to these items, as posts, show up in the feed.
+
+    How do i want to handle updates in feeds? That is, I guess, also important.
+
+    Let's say I write a post, then a yearr later it has a new version, because the facts changed.
+    There should be revision numbers added later.
