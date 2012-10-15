@@ -1,2 +1,4 @@
 title: Jules
 type: project
+render: jinja2
+template: post.j2
