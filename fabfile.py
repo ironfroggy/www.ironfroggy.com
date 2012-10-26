@@ -37,10 +37,10 @@ template: post.j2
 series: {series}
 content: {content}
 """
-def new():
+def new(key=None):
     params = dict(
         title = raw_input("title: "),
-        key = raw_input("path: "),
+        key = key or raw_input("path: "),
         series = raw_input("series: "),
         now = datetime.datetime.now().strftime('%Y-%M-%d %h:%m:%s'),
         content = raw_input("content: "),
