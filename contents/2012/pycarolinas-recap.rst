@@ -13,3 +13,5 @@ Preparing
 ^^^^^^^^^
 
 This was not only the first conference I ran, but the first involvement in running an event beyond a dozen-person hacknight for `TriZPUG <http://trizpug.org>`_, so "out of my comfort zone" accurately describes how I felt during the months leading up to October 20th and 21st.
+
+I had mentioned a few times, in a few places, that the carolinas (and the south east in general) need a Python conference. What I meant was "Hey, *someone else* should run a Python conference, so I can attend." But, no one did. 
