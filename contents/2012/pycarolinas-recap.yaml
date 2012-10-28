@@ -11,3 +11,14 @@ tags:
 - python
 - community
 - pycarolinas
+sidebar_links:
+    What other people say about PyCarolinas:
+        - headline: Kurt Grandis
+          text: PyCarolinas Redux
+          url: http://kurtgrandis.com/blog/2012/10/22/pycarolinas-redux/ 
+        - headline: Barry Peddycord III
+          text: So... PyCarolinas
+          url: http://isharacomix.org/2012/10/24/so-pycarolinas/
+        - headline: Lynn Root
+          text: "Community FTW: Kicking off the PyCarolinas Community"
+          url: http://www.roguelynn.com/2012/10/21/community-ftw-kicking-of-the-pycarolinas-community/

@@ -41,6 +41,19 @@
         <li class=feed><a href="{{ tag.url() }}">{{ tag.value }}</a></li>
     {% endfor %}
     </ul>
+    {% if bundle.meta.sidebar_links %}
+        {% for group_title, group in bundle.meta.sidebar_links.items() %}
+            <h3>{{ group_title }}</h3>
+            <ul class=list>
+            {% for link in group %}
+                <li>
+                    {% if link.headline %}<h4>{{ link.headline }}</h4>{% endif %}
+                    <a href="{{ link.url }}">{{ link.text }}</a>
+                </li>
+            {% endfor %}
+            </ul>
+        {% endfor %}
+    {% endif %}
 {% endblock %}
 
 {% block content %}
