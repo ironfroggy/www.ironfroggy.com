@@ -100,11 +100,15 @@ Of course, `our sponsors <http://blog.pycarolinas.org/sponsors/>`_ made everythi
 
     And, a special thanks to Joe Copp and Andrew Kuchling, who both made personal donations in support of our fledgeling event.
 
-Finally, without our amazing speakers to fill our schedule and share their knowledge and experiences with us, there would be no conference to attend in the first place.
+And, without our amazing speakers to fill our schedule and share their knowledge and experiences with us, there would be no conference to attend in the first place.
 
     Thank you, to our keynote speakers Lynn Root and Gary Bishop.
 
     Thank you to all of all session speakers Randall Hunt, Joseph S. Tate, A.M Kuchling, Chris Church, Paul J Kowalczyk, PhD, Rick Copeland, Mark Lavin, Michael Manfre, David Ray, Vinod Kurup, Wayne Witzel III, William Sams, Al Snow, Barry Peddycord III, Kenneth Reitz, Matthew Frazier, Julia Elman, Fred Alger, Jeff Heard, Brian Painter, Tim Hopper, Simeon Franklin, Francois Dion, Flaviu Simihaian, Chris Calloway, Michael DeHaan, Dr. Brian J. Soher, Philip Semanchuk, and Brad Crittenden.
+
+But, what would a conference be without an audience?
+
+    I want to give a very sincere thank you to everyone who attended this first year. You all came to an event that had never happened before, so you had no idea what to expect. This faith in our new occurance is not missed, and I hope we have lived up to whatever it was you hoped to get out of the weekend. I hope that PyCarolinas was good enough use of your time that I will not only see each and every face again next year, but that you'll all spend the year pumping up your local user groups and Python community and bring more people along next year.
 
 Next Year
 ^^^^^^^^^
