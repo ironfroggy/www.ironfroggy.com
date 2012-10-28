@@ -18,7 +18,6 @@ def build():
     local('jules build -f')
 
 def deploy():
-    build()
     rsync_project('/domains/www.ironfroggy.com/default/', '_build/')
 
 def update():
