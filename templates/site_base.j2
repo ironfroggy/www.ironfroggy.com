@@ -13,7 +13,7 @@
             {% endif %}
         </h4>
         {% if bundle.content %}
-            {{ bundle.content|truncate(tease_length)|safe }}
+            {{ bundle.content|truncate(bundle.meta.tease_length or tease_length)|safe }}
         {% endif %}
         <a class="peak read-more" href="{{ bundle.url() }}">more</a>
     </article>
