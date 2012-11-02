@@ -1,0 +1,10 @@
+title: "Why I Won't be Doing NaNoWriMo Anymore"
+publish_time: !!timestamp '2012-11-01 23:01:00'
+updated_time: !!timestamp '2012-11-01 23:01:00'
+created_time: !!timestamp '2012-11-01 23:01:00'
+status: published
+type: post
+rnder: jinja2
+template: post.j2
+tags:
+- writing

@@ -1,5 +1,24 @@
 {% extends "base.j2" %}
 
+{% macro article_tease(bundle, tease_length) %}
+    <article class=tease>
+        <h3><a href="{{ bundle.url() }}">{{ bundle.meta.title}}</a></h3>
+        <h4 class=peak>{{ bundle.meta.publish_time }}
+            {% if bundle.tags %}
+            <span class=tags>
+            {% for tag in bundle.tags %}
+                {{ tag }}{% if not loop.last %}, {% endif %}
+            {% endfor %}
+            </span>
+            {% endif %}
+        </h4>
+        {% if bundle.content %}
+            {{ bundle.content|truncate(tease_length)|safe }}
+        {% endif %}
+        <a class="peak read-more" href="{{ bundle.url() }}">more</a>
+    </article>
+{% endmacro %}
+
 {% block extra_head %}
     <link rel="stylesheet" type="text/css" href="/css/pygments.css">
     <link rel="stylesheet" type="text/css" href="/css/foundation-icons-general.css">

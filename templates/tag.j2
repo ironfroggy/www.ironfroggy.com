@@ -12,21 +12,6 @@
 
 {% block content %}
     {% for bundle in bundle.get_bundles_by("title", "desc", status="published") %}
-        <article class=tease>
-            <h3><a href="{{ bundle.url() }}">{{ bundle.meta.title|title }}</a></h3>
-            <h4 class=peak>{{ bundle.meta.publish_time }}
-                {% if bundle.tags %}
-                <span class=tags>
-                {% for tag in bundle.tags %}
-                    {{ tag }}{% if not loop.last %}, {% endif %}
-                {% endfor %}
-                </span>
-                {% endif %}
-            </h4>
-            {% if bundle.content %}
-                {{ bundle.content|truncate(255)|safe }}
-            {% endif %}
-            <a class="peak read-more" href="{{ bundle.url() }}">more</a>
-        </article>
+        {{ article_tease(bundle, 255) }}
     {% endfor %}
 {% endblock %}
