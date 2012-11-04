@@ -1,4 +1,4 @@
-{% extends "site_base.j2" %}
+{% extends "post.j2" %}
 
 {% block extra_head %}
     {{ super() }}
@@ -6,7 +6,11 @@
 {% endblock %}
 
 {% block header_right %}
-    <h1><em>{{ bundle.value }}</em> tagged content</h1>
+    {% if bundle.meta.title %}
+        <h1 class=title>{{ bundle.meta.title|title }}</h1>
+    {% else %}
+        <h1 class=title><em>{{ bundle.value }}</em> tagged content</h1>
+    {% endif %}
     <a href="http://{{ config.domain }}/feeds/{{ bundle.key }}/atom.xml"><img src="/images/rss_icon.png" /></a>
 {% endblock %}
 

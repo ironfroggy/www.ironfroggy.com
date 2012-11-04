@@ -35,12 +35,14 @@
         {% endfor %}
         </ul>
     {% endfor %}
-    <h3>Tags</h3>
-    <ul class=list>
-    {% for tag in bundle.meta['collections'].get('tags', {}) %}
-        <li class=feed><a href="{{ tag.url() }}">{{ tag.value }}</a></li>
-    {% endfor %}
-    </ul>
+    {% if bundle.meta['collections'].get('tags') %}
+        <h3>Tags</h3>
+        <ul class=list>
+        {% for tag in bundle.meta['collections'].get('tags', {}) %}
+            <li class=feed><a href="{{ tag.url() }}">{{ tag.value }}</a></li>
+        {% endfor %}
+        </ul>
+    {% endif %}
     {% if bundle.meta.sidebar_links %}
         {% for group_title, group in bundle.meta.sidebar_links.items() %}
             <h3>{{ group_title }}</h3>
