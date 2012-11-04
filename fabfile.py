@@ -33,23 +33,40 @@ status: published
 type: post
 rnder: jinja2
 template: post.j2
-series: {series}
-content: {content}
 """
+
+DATEFMT = '%Y-%m-%d %H:%M:00'
+
 def new(key=None):
     params = dict(
         title = raw_input("title: "),
         key = key or raw_input("path: "),
         series = raw_input("series: "),
-        now = datetime.datetime.now().strftime('%Y-%M-%d %h:%m:%s'),
+        now = datetime.datetime.now().strftime(DATEFMT),
         content = raw_input("content: "),
     )
     if not params['key']:
-        params['key'] = key = title.lower().replace(' ', '-')
+        params['key'] = key = params['title'].lower().replace(' ', '-')
         assert re.match(r'[-a-z/]*', key)
     else:
         key = params['key']
+
+    path_parts = key.split('/')
+    for i in range(1, len(path_parts)):
+        part_path = os.path.join('contents', *path_parts[:i])
+        if not os.path.exists(part_path):
+            os.mkdir(part_path)
+
     if not params['content']:
         open(os.path.join('contents', key) + '.rst', 'w')
+
     with open(os.path.join('contents', key) + '.yaml', 'w') as f:
         f.write(template.format(**params))
+    if params['series']:
+        f.write('series: ')
+        f.write(param['series'])
+        f.write('\n')
+    if params['content']:
+        f.write('content: ')
+        f.write(param['content'])
+        f.write('\n')
