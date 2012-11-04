@@ -31,7 +31,6 @@ updated_time: !!timestamp '{now}'
 created_time: !!timestamp '{now}'
 status: published
 type: post
-rnder: jinja2
 template: post.j2
 """
 
@@ -62,11 +61,11 @@ def new(key=None):
 
     with open(os.path.join('contents', key) + '.yaml', 'w') as f:
         f.write(template.format(**params))
-    if params['series']:
-        f.write('series: ')
-        f.write(param['series'])
-        f.write('\n')
-    if params['content']:
-        f.write('content: ')
-        f.write(param['content'])
-        f.write('\n')
+        if params['series']:
+            f.write('series: ')
+            f.write(param['series'])
+            f.write('\n')
+        if params['content']:
+            f.write('content: ')
+            f.write(param['content'])
+            f.write('\n')
