@@ -28,7 +28,7 @@
         <h4>Updated {{ bundle.meta.updated_time.strftime('%Y/%m/%d') }}</h4>
     {% endif %}
     {% for series in bundle.meta['collections'].get('series', {}) %}
-        <h3>Series: {{ series.value }} <img src="/images/rss_icon_small.png" /></h3>
+        <h3>Series: <a href="{{ series.url() }}">{{ series.value }} <img src="/images/rss_icon_small.png" /></a></h3>
         <ul class=list>
         {% for series_member in series.values()|sortbundles('title') %}
             <li><a href="{{ series_member.url() }}">{{ series_member.meta.title|title }}</a></li>
