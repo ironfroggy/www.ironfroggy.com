@@ -17,8 +17,8 @@ def clean():
 def build():
     local('jules build -f')
 
-def deploy():
-    rsync_project('/domains/www.ironfroggy.com/default/', '_build/')
+def deploy(delete=True):
+    rsync_project('/domains/www.ironfroggy.com/default/', '_build/', delete=delete)
 
 def update():
     clean()
