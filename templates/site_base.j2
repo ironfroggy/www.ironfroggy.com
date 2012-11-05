@@ -70,6 +70,7 @@
         {% endif %}
 
         <h3><a href="{{ engine.get_bundle(title="Projects").url() }}">Projects <span class="glyph general">u</span></a></h3>
+        <h3><a href="{{ engine.get_bundle(key="about").url() }}">About <span class="glyph general">u</span></a></h3>
 
         <h3>Tags</h3>
         <ul class=list>
@@ -80,7 +81,6 @@
         {% endfor %}
         </ul>
 
-        <h3><a href="{{ engine.get_bundle(key="about").url() }}">About <span class="glyph general">u</span></a></h3>
     </div>
 
 {% endblock %}
