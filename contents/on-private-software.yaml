@@ -1,0 +1,30 @@
+title: "On Private Software"
+publish_time: !!timestamp '2012-11-05 23:47:00'
+updated_time: !!timestamp '2012-11-05 23:47:00'
+created_time: !!timestamp '2012-11-04 00:47:00'
+status: published
+type: post
+rnder: jinja2
+template: post.j2
+tags:
+- personal
+- programming
+content: |
+    Private software is software one writes only for themselves and never shares or intends to share. It isn't commercial, because it isn't sold or even distributed at all. It isn't open source, but it shares something in spirit. I write about this in favor, though like all things, on a case by caes basis.
+
+    I'm coming to really enjoy the idea of private software. Private software made by a person to solve a personal need and none other. It is, at its surface, very contrary to what you might expect Open Source to be about, but in a way I believe it to be a great shining example of the ideals open source comes from. I build tools that I use, and I have the ability to do that. These tools are mine in a way that nothing I ever buy or download will ever be. it is mine to the core. I own my copies of it, as well as the faults and features and plans and potentials. I feel good about it.
+
+    It is also worth noting that the development of a private project is much different from anthing I would write intending to share. This isn't just a bad thing. I admit it can lead to some sloppier code at times, but that isn't itself bad. It means I can do something different, for one. it also means I can do something that just works for me, the best I possibly can. I am free from the burden of users. I build what works to solve my problem and I move on. I stop yak shaving.
+
+    While I maintain a few open source projects, I also keep a few projects that I never intend to release, and I use them often, even daily. I do this in places where I just want a very specific solution to a very specific problem, but I really need to avoid spending a lot of time on it. I just need it to work, and I don't want polishing the solution for release to get in the way.
+
+    The tool I use the most is a little script called WREP I have developed over the last several months. It is the tool I originally wrote this post with, in fact. it collects my thoughts, prompts me to write about things, and helps me to consume freeform writing into posts. WREP is my Write - Review - Edit - Publish tool, and it is still under development. I don't expect to ever release it. This is a tool that exists to fit into the exact shape of my own mind when I'm writing. it is very personal. I think if I released it, the tool and my use of it would suffer.
+
+    I would spend time writing documentation, instead of writing the things I created WREP for in the first place.
+    I would add features or massage the idea of the tool to be more widely useful.
+
+    I would focus on polishing the tool to be approachable by someone who didn't write it (like me) instead of spending my time using it.
+
+    Once WREP solves what I need *right now*, i need to step back and just be a user. Private software, as much as it is a concept for developers, is one that lets me step back and just be a user again, even of my own products.
+
+    I'd like to hear if anyone does builds these kinds of *me-only* tools.
