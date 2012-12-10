@@ -1,0 +1,26 @@
+title: "I Love Pocket"
+publish_time: !!timestamp '2012-12-09 22:45:00'
+updated_time: !!timestamp '2012-12-09 22:45:00'
+created_time: !!timestamp '2012-12-09 22:45:00'
+status: published
+type: post
+template: post.j2
+series: Workflow
+tags:
+- tools
+- web
+- life online
+content: |
+    Pocket is a reading list, and a far better way to track things you want to read, when you have the time, than the dozens of open tabs across multiple browsers and computers that many of us seem to be stuck in.
+
+    It is, for the most part, *exactly* what I wanted before I ever found it.
+
+    Available as a website, a Firefox and Chrome extension, and a mobile app, it is everywhere I might be when I want to remember to read something, or find a little time I can use to do some light web reading.
+
+    A very quick and easy workflow is enabled. I have adjusted the settings a bit to enable close-on-add, so when I find myself looking at a blog post that I know I want to read, but I just don't have the time, I simply click the Pocket button in the address bar (or press Alt+W) and Pocket adds the page to my list and closes the tab for me. Out of sight, out of mind. When I want to read sometihng, I open a blank tab and press Alt+P and see a random page from my list (you can configure it to show the most recent or the oldest, if you'd like). If it isn't something I feel in the mind to digest at the moment, I press Alt+P again, until I see something I want to read, and I do.
+
+    But more than that, it helps me use the little free time in my day. On the bus, I can bring up my entire reading list on my phone, even cached if I find myself without an internet connection. In a long car trip, it keeps all of my remembered pages cached, so Firefox can open them even if I am offline. If an article is really long, and I don't have time to finish it, **Pocket will remember how far into the page I had scrolled, for next time.**
+
+    Pocket has made my online reading experience wonderful.
+
+    `Give it a try <http://getpocket.com/>`_. I highly recommend it!
