@@ -63,9 +63,9 @@ def new(key=None):
         f.write(template.format(**params))
         if params['series']:
             f.write('series: ')
-            f.write(param['series'])
+            f.write(params['series'])
             f.write('\n')
         if params['content']:
             f.write('content: ')
-            f.write(param['content'])
+            f.write(params['content'])
             f.write('\n')
