@@ -9,6 +9,7 @@ from fabric.state import env
 
 
 env.hosts = ['www.ironfroggy.com']
+env.user = 'calvin'
 
 def clean():
     local('find . -name "*.swp" -delete')
