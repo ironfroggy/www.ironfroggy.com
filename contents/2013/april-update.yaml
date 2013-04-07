@@ -1,0 +1,44 @@
+title: "What's up with me? April 2013"
+publish_time: !!timestamp '2013-04-07 09:03:00'
+updated_time: !!timestamp '2013-04-07 09:03:00'
+created_time: !!timestamp '2013-04-07 09:03:00'
+status: published
+type: post
+template: post.j2
+tags:
+- personal
+content: |
+    What's going on with me? What am I trying to do, what have I been doing, and what should I be doing?
+
+    I've had a couple months of unexpected things coming up in my life, and its thrown the things I tried
+    to plan for in a bit of an unknown loop. I'm not complaining, necessarily. Life hasn't been bad. Just
+    the opposite, its been unexpectedly good and getting better. Still, I need a little more *expected* good
+    in the mix, and it is obvious this will happen by force of will and persistence, not wishful thinking.
+
+    I'm still tinkering away, kind of slowly, on Plasmid. This is my project to synchronize browser-local
+    IndexedDB storage between machines for users, and provide a platform where we can build great web-based
+    applications to users that won't let them down. I'm past the low hanging fruit of the honeymoon phase
+    when you start a new project, so I really need to buckle down on this. I still consider Plasmid an
+    experiment, and I don't want to roll a real release, even that first 0.1, until it's something I'm at
+    all comfortable with someone else using. So, what am I missing to get to that point?
+
+     - Plasmid needs its own website, even just a small bit of copywrite on the intent and links to download.
+       Gosh, maybe even documentation!
+     - Some testing would be nice. I'm still not sure how to do this well for IndexedDB, but actual integration
+       tests are likely, to ensure things operate across browser implementations of IndexedDB.
+     - Stable authorization rules around a scheme of Account, Guest Creator, Guest, and Device keys.
+
+    When I reach these small steps, I hope to announce a usable alpha for early-adopters before April's end!
+
+    At PyCon I met up with the always awesome Lynn Root, and I'm really excited about NewCoder.io so I spent
+    the day I stuck around for the sprints reviewing content and contributing some small edits to help. I plan
+    to continue across the rest of the content, and to help promote the new site.
+
+    I took my Netbook to PyCon, instead of my laptop. While there are obvious limitations, I'm sold on portability.
+    Anyone looking to buy a used Thinkpad T510?
+
+    My Son and I are working on designs for our first game, a Zombie Strategy game. I've got an engine ready to
+    power this, and we're starting on the prototype. Very excited for this father-son project.
+
+    This website could be better.
+
