@@ -8,7 +8,7 @@
     }
 {% endmacro %}
 
-{% macro title(bundle) %}{{ bundle.meta.title|title }}{% endmacro %}
+{% macro title(bundle) %}{% if bundle.meta.title %}{{ bundle.meta.title|title }}{% else %}{{ bundle.key|title }}{% endif %}{% endmacro %}
 
 {% macro article_tease(bundle, tease_length) %}
     <article class=tease>

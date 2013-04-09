@@ -5,7 +5,8 @@ created_time: !!timestamp '2013-01-02 02:51:00'
 status: published
 type: post
 template: post.j2
-series: Workflow
+tags:
+- workflow
 content: |
     I'm experimenting with a new laptop for January, and if I like it I'll be selling my previous 15 inch Thinkpad t510 and keeping the new machine: an 11.6" Acer Aspire. The change is significant, but I feel it is for the best. I'm rethinking what I want in a laptop.
 
