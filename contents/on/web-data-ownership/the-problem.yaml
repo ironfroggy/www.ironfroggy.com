@@ -1,0 +1,12 @@
+title: "Where We Are and How We Got Here"
+publish_time: !!timestamp '2013-04-09'
+updated_time: !!timestamp '2013-04-09'
+created_time: !!timestamp '2013-04-09'
+status: published
+type: post
+template: post.j2
+series: on/web-data-ownership
+content: |
+    The web has evolved a lot, both technically and otherwise. It has evolved in how it
+    solves problems and what problems it solves to aim. It has evolved both what it is and
+    why it is.
