@@ -2,7 +2,7 @@
 
 {% block header_right %}
     {% set series = bundle.get_collection('series') %}
-    {% if series %}
+    {% if series and title(series) %}
         <em>Part of "{{ title(series) }}"</em>
     {% endif %}
     {% if bundle.meta.link_to %}
