@@ -42,6 +42,7 @@ def new(key=None):
         title = raw_input("title: "),
         key = key or raw_input("path: "),
         series = raw_input("series: "),
+        topic = raw_input("topic: "),
         now = datetime.datetime.now().strftime(DATEFMT),
         content = raw_input("content: "),
     )
@@ -65,6 +66,10 @@ def new(key=None):
         if params['series']:
             f.write('series: ')
             f.write(params['series'])
+            f.write('\n')
+        if params['topic']:
+            f.write('topic: ')
+            f.write(params['topic'])
             f.write('\n')
         if params['content']:
             f.write('content: ')

@@ -39,5 +39,14 @@ collections:
         meta:
             render: jinja2
             template: series.j2
+    topic:
+        key_pattern: "on/{value}"
+        match:
+            status: published
+        group_by:
+            is: topic
+        meta:
+            render: jinja2
+            template: topic.j2
 feed_campaign:
     name: "Feed Subscribers"

@@ -1,0 +1,38 @@
+{% extends "post.j2" %}
+
+{% block extra_head %}
+    {{ super() }}
+    <link href="http://{{ config.domain }}/feeds/{{ bundle.key }}/atom.xml" type="application/atom+xml" rel="alternate" title="www.ironfroggy.com/feeds/{{ bundle.key }} ATOM feed" />
+{% endblock %}
+
+{% block header_right %}
+    {{ super() }}
+    <a href="http://{{ config.domain }}/feeds/{{ bundle.key }}/atom.xml"><img src="/images/rss_icon.png" /></a>
+{% endblock %}
+
+{% block content_article %}
+    {{ super() }}
+
+    {% set topic_bundles = bundle.get_bundles_by("title", "desc", status="published") %}
+
+    <em>There have been {{ topic_bundles|length }} posts on this topic.</em>
+
+    {% for bundle in topic_bundles %}
+        <article class=tease>
+            <h3><a href="{{ bundle.url() }}">{{ bundle.meta.title|title }}</a></h3>
+            <h4 class=peak>{{ bundle.meta.publish_time }}
+                {% if bundle.tags %}
+                <span class=tags>
+                {% for tag in bundle.tags %}
+                    {{ tag }}{% if not loop.last %}, {% endif %}
+                {% endfor %}
+                </span>
+                {% endif %}
+            </h4>
+            {% if bundle.content %}
+                {{ bundle.content|truncate(255)|safe }}
+            {% endif %}
+            <a class="peak read-more" href="{{ bundle.url() }}">more</a>
+        </article>
+    {% endfor %}
+{% endblock %}
