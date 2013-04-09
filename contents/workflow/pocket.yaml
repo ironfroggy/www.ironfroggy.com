@@ -5,11 +5,11 @@ created_time: !!timestamp '2012-12-09 22:45:00'
 status: published
 type: post
 template: post.j2
-series: workflow
 tags:
 - tools
 - web
 - life online
+- workflow
 content: |
     Pocket is a reading list, and a far better way to track things you want to read, when you have the time, than the dozens of open tabs across multiple browsers and computers that many of us seem to be stuck in.
 
