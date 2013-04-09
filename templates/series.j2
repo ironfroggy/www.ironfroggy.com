@@ -6,13 +6,25 @@
 {% endblock %}
 
 {% block header_right %}
-    <h1><em>Series: </em>{{ bundle.value }}</h1>
+    <h1><em>Series: </em>{{ title(bundle) }}</h1>
     <a href="http://{{ config.domain }}/feeds/{{ bundle.key }}/atom.xml"><img src="/images/rss_icon.png" /></a>
 {% endblock %}
 
 {% block content %}
+    {% block content_article %}
+    <article>
+        {{ bundle.content|safe }}
+    </article>
+    {% endblock %}
+
+    {% set series = bundle %}
+
     {% for bundle in bundle.get_bundles_by("title", "desc", status="published") %}
-        <article class=tease>
+        {% if series.meta.series_type == "stream" %}
+            <article class=stream-entry>
+        {% else %}
+            <article class=tease>
+        {% endif %}
             <h3><a href="{{ bundle.url() }}">{{ bundle.meta.title|title }}</a></h3>
             <h4 class=peak>{{ bundle.meta.publish_time }}
                 {% if bundle.tags %}
@@ -24,9 +36,13 @@
                 {% endif %}
             </h4>
             {% if bundle.content %}
-                {{ bundle.content|truncate(255)|safe }}
+                {{ bundle.content|safe }}
             {% endif %}
-            <a class="peak read-more" href="{{ bundle.url() }}">more</a>
+            {% if series.meta.series_type == "stream" %}
+                <a class="peak read-more" href="{{ bundle.url() }}">see comments</a>
+            {% else %}
+                <a class="peak read-more" href="{{ bundle.url() }}">read more or comment</a>
+            {% endif %}
         </article>
     {% endfor %}
 {% endblock %}

@@ -24,7 +24,6 @@ bundle_defaults:
     render: jinja2
 collections:
     tags:
-        key_pattern: "{value}"
         match:
             status: published
         group_by:
@@ -40,7 +39,6 @@ collections:
             render: jinja2
             template: series.j2
     topic:
-        key_pattern: "on/{value}"
         match:
             status: published
         group_by:

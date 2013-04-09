@@ -223,8 +223,29 @@ article.tease {
     }
 }
 
+article.stream-entry {
+    padding: 10px;
+    background: #fffffc;
+    .inner-shadow(0, 0, 5px);
+    
+    h3 {
+        margin-top: 5px;
+    }
+    .tags {
+        float: right;
+    }
+}
+
 h3 + h4 {
     margin-top: -1em;
+}
+.pre-title {
+    color: grey;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+.pre-title + .title {
+    margin-top: 5px;
 }
 
 #disqus_thread {

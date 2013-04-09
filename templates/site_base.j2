@@ -1,8 +1,22 @@
 {% extends "base.j2" %}
 
+{% macro show_meta(bundle) %}
+    {
+    {% for key in bundle.meta %}
+        {{ key }}: {{ bundle.meta[key] }},
+    {% endfor %}
+    }
+{% endmacro %}
+
+{% macro title(bundle) %}{{ bundle.meta.title|title }}{% endmacro %}
+
 {% macro article_tease(bundle, tease_length) %}
     <article class=tease>
-        <h3><a href="{{ bundle.url() }}">{{ bundle.meta.title}}</a></h3>
+        {% set series = bundle.get_collection('series') %}
+        {% if series %}
+            <h3 class=pre-title>{{ series.meta.title|title }}</h3>
+        {% endif %}
+        <h3 class=title><a href="{{ bundle.url() }}">{{ bundle.meta.title|title }}</a></h3>
         <h4 class=peak>{{ bundle.meta.publish_time }}
             {% if bundle.tags %}
             <span class=tags>
@@ -62,7 +76,7 @@
             <ul class=list>
             {% for bundle in engine.get_bundles_by("publish_time", "desc", 5, status="published", type="post") %}
                 <li>
-                    <a href="{{ bundle.url() }}">{{ bundle.meta.title|title }}</a><br />
+                    <a href="{{ bundle.url() }}">{{ title(bundle) }}</a><br />
                     <em class=list-extra>{{ bundle.meta.publish_time }}</em>
                 </li>
             {% endfor %}

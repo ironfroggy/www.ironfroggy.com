@@ -1,14 +1,14 @@
 {% extends "site_base.j2" %}
 
 {% block header_right %}
-    {% set in_these_series = bundle.meta['collections'].get('series', {}) %}
-    {% if in_these_series %}
-        <em>Part of {% for series in in_these_series %}"{{ series.value }}"{% if not loop.last %}, {% endif %}{% endfor %}</em>
+    {% set series = bundle.get_collection('series') %}
+    {% if series %}
+        <em>Part of "{{ title(series) }}"</em>
     {% endif %}
     {% if bundle.meta.link_to %}
-        <h1 class="title title-link"><a href="{{ bundle.meta.link_to }}" target="_new">{{ bundle.meta.title|title  }} <span class="glyph general">u</span></a></h1>
+        <h1 class="title title-link"><a href="{{ bundle.meta.link_to }}" target="_new">{{ title(bundle) }} <span class="glyph general">u</span></a></h1>
     {% else %}
-        <h1 class=title>{{ bundle.meta.title|title  }}</h1>
+        <h1 class=title>{{ title(bundle)  }}</h1>
     {% endif %}
     {% if bundle.meta.subtitle %}
         <h3>{{ bundle.meta.subtitle }}</h3>
@@ -28,10 +28,13 @@
         <h4>Updated {{ bundle.meta.updated_time.strftime('%Y/%m/%d') }}</h4>
     {% endif %}
     {% for series in bundle.meta['collections'].get('series', {}) %}
-        <h3><a href="{{ series.url() }}">{{ series.value }} <img src="/images/rss_icon_small.png" /></a></h3>
+        {% if loop.first %}
+            <h3 class=pre-title>Series</h3>
+        {% endif %}
+        <h3><a href="{{ series.url() }}">{{ title(series) }} <img src="/images/rss_icon_small.png" /></a></h3>
         <ul class=list>
         {% for series_member in series.values()|sortbundles('title') %}
-            <li><a href="{{ series_member.url() }}">{{ series_member.meta.title|title }}</a></li>
+            <li><a href="{{ series_member.url() }}">{{ title(series_member) }}</a></li>
         {% endfor %}
         </ul>
     {% endfor %}
@@ -72,6 +75,14 @@
         {% endfor %}
     </article>
     {% endblock %}
+
+    {% set series = bundle.get_collection('series') %}
+    {% if series %}
+        <div>
+            <h3>Part of an on-going series "{{ title(series) }}"</h3>
+            <p>Do you want to <a href="{{ series.url() }}">read more about this</a>?</p>
+        </div>
+    {% endif %}
 
     {% if config.disqus.enabled_default and not bundle.meta.disqus_disable %}
         <div id="disqus_thread"></div>
