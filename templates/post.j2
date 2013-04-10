@@ -29,7 +29,7 @@
     {% endif %}
     {% for series in bundle.meta['collections'].get('series', {}) %}
         {% if loop.first %}
-            <h3 class=pre-title>Series</h3>
+            <h3 class=pre-title>Part of a Series</h3>
         {% endif %}
         <h3><a href="{{ series.url() }}">{{ title(series) }} <img src="/images/rss_icon_small.png" /></a></h3>
         <ul class=list>
