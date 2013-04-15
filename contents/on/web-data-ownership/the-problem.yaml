@@ -1,15 +1,14 @@
 title: "The Problem with Web Data"
-publish_time: !!timestamp '2013-04-09'
-updated_time: !!timestamp '2013-04-09'
-created_time: !!timestamp '2013-04-09'
+publish_time: !!timestamp '2013-04-15'
+updated_time: !!timestamp '2013-04-15'
+created_time: !!timestamp '2013-04-15'
 status: published
 type: post
 template: post.j2
 series: on/web-data-ownership
+series-part: 1
 content: |
-    Thinking about the web and publishing and content and data ownership.
-
-    What does it mean to "own" my data in a web-based world? I don't know what this means, but it seems important to me. I should understand things which seem important. I'm not even sure what questions to ask.
+    What does it mean to "own" my data in a web-based world? I don't know what this means, but we should.
 
     Before the growing responsibilities of "The Web" is for us, owning my data meant the files sat on my own machine. It meant the files were in a format that was either human readable, or documented well enough that alternative tools could read it or convert it. It meant no vendor could die, or change its mind, and make my data useless to me.
     
@@ -17,7 +16,18 @@ content: |
 
     On the web, my data sits in a database on a machine someone else owns. They make backups, I hope. The information, even if I am said to own it, sits in a format I do not know and cannot see. Even if I got a copy, I wouldn't know what to do with it. The cloud is the Microsoft Word of our day.
 
-    The location of the data is shifting, in a potential future where IndexedDB is the norm and our web applications are just deployment vectors, but we still work with data sitting on our own machines.  But, after long battles for open formats and documented data, we suddenly are being thrust into a world where all of our own data, on our own machines, is obscured in thousands of tiny web apps with thier own "format" of dumping our data into the browsers storage sandbox. The data is on my machine, but is the data mine?
+    The location of the data is shifting, in a potential future where IndexedDB and friends are the norm and our web applications are just deployment vectors, but we still work with data sitting on our own machines.  But, after long battles for open formats and documented data, we suddenly are being thrust into a world where all of our own data, on our own machines, is obscured in thousands of tiny web apps with thier own "format" of dumping our data into the browsers storage sandbox. The data is on my machine, but is the data mine?
+
+    What good was the first for open file formats, when even our local data isn't being stored in a "file" the way we've known it up to now?
 
     We've been fighting for a while to keep access open to our own data on servers, but this time we need to solve the problem before it comes up. We need to make sure we own the data *inside our own browsers* before it gets locked away from us in the first place.
 
+    These are the questions we need to answer:
+
+    - What should we demand of services that hold our data?
+    - How can we position this to benefit the service providers, incentivizing them to do te right thing?
+    - Can browser-side storage replace the filesystem for a user?
+    - Do we even want this?
+    - How can web standards, browser vendors, and users push for te right future to happen?
+
+    We need to answer these problems early, this time around.
