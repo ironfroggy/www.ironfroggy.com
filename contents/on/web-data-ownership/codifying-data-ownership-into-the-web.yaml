@@ -1,0 +1,11 @@
+title: "Codifying Data Ownership into the Web"
+publish_time: !!timestamp '2013-04-14'
+updated_time: !!timestamp '2013-04-14'
+created_time: !!timestamp '2013-04-14'
+status: planned
+type: post
+template: post.j2
+series: on/web-data-ownership
+series-part: 4
+content: |
+    TODO
