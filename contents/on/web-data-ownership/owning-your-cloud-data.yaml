@@ -1,11 +1,58 @@
 title: "Owning Your Cloud Data"
-publish_time: !!timestamp '2013-04-14'
-updated_time: !!timestamp '2013-04-14'
-created_time: !!timestamp '2013-04-14'
-status: planned
+publish_time: !!timestamp '2013-04-23'
+updated_time: !!timestamp '2013-04-23'
+created_time: !!timestamp '2013-04-23'
+status: published
 type: post
 template: post.j2
 series: on/web-data-ownership
 series-part: 2
 content: |
-    TODO
+    The most well known, yet still problematic, area of data ownership in our web-based world
+    is all the data we keep housed "in the cloud" in the machines of the services we use every
+    day.
+
+    - The contents of your blog at Tumblr
+    - The documents your company shares on Google Drive
+    - Your to-do list at Nozbe or Remember the Milk
+    - The music you've bought and listen to at Amazon
+    - All your family photos kept safely (you hope) on Flickr
+
+    All of these services hold the information that is important to you, that you depend on, in
+    many cases defines a large part of who you are (your writings, your photos, your musical
+    tastes). How often do you plan for these services having a major outage? Or vanishing
+    entirely and forever? Or suffering some kind of terrible data loss?
+
+    What if you just decide they aren't the right fit, and you want to take your business (and
+    your data) elsewhere? Do you have that option? Is it a painful option, if it even exists?
+
+    Most of us, even the technical among us, don't think about this at all.
+
+    Many *have* been pushing for this, both from the outside and inside of the organizations
+    we depend on, and we have them to thank for the cloud data we can exercise some moderate
+    feeling of ownership over. The victories are as varied as they are rare, unfortunately.
+
+    - We still depend on DRM servers to verify we're allowed to watch movies we own
+    - Our GMail accounts can be fetched locally, but only as an implementation of IMAP, not
+      an explicit export option
+    - My to-do list can be synced by third party tools, but they're banned from the service
+      if they provide any new features on that data. Do I really own my to-do list?
+
+    We have a lot of work to do.
+
+    Obviously, it can be seen as a business problem not to keep some grip on this data. I won't
+    say I don't blame vendors (I do blame them) but I understand their position, just the same.
+    If we want real change, we need to make the case for private data access on business merits
+    and give them a reason to support our blight that even their accountants can get behind.
+
+    How can a business benefit from letting its customers walk away?
+
+    - Access to your data is an excellent selling point. I'll pay a premium to know my data
+      is *my* data
+    - It may make it easier to leave, but it also makes it easier to try your service out,
+      knowing that I can back out if I don't like it. Let me test the waters!
+    - The same access that lets me walk away also lets me do more with your service. Dropbox
+      is a great example of this.
+
+    A friend recent told me that "owning your data and web apps are mutually exclusive" and I'm
+    confident we can prove him wrong.
