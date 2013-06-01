@@ -1,0 +1,21 @@
+title: Plasmid
+type: project
+template: post.j2
+render: jinja2
+link_to: http://ironfroggy.github.io/plasmid
+content: |
+    Plasmid is a browser database for offline-first web apps.
+
+    Plasmid makes it easy to take advantage of storage browsers provide for our web applications today.
+
+    Building offline first web apps is a breeze with Plasmid.js, the javascript library that makes the complicated details of IndexedDB under the hood and makes it easy to build, utilize, and manage your browser-side databases.
+
+    But, users don't live on one device and the web thrives online. That's why Plasmid was built from the ground up to support synroncizing these databases with the Plasmid Sync server.
+
+    I am actively developing and using Plasmid and welcome anyone to try it out! I keep a mailing list for the project hosted at Google Groups:
+
+    https://groups.google.com/forum/?fromgroups#!topic/plasmid-database/
+
+    And don't forget the Plasmid website:
+
+    http://ironfroggy.github.io/plasmid/
