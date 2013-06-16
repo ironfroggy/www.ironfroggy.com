@@ -12,7 +12,7 @@
 
 {% macro article_tease(bundle, tease_length) %}
     <article class=tease>
-        {% set series = bundle.get_collection('series') %}
+        {% set series = plugins.collections.get_collection(bundle, 'series') %}
         {% if series %}
             <h3 class=pre-title>{{ series.meta.title|title }}</h3>
         {% endif %}
