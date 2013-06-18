@@ -1,5 +1,7 @@
 title: "www.ironfroggy.com"
 subtitle: "A web place for Calvin Spealman"
+plugins:
+- "mysiteplugins"
 packs:
 - "jules:html5boilerplate"
 - "jules:lesscss"
