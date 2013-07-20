@@ -8,15 +8,15 @@
     }
 {% endmacro %}
 
-{% macro title(bundle) %}{% if bundle.meta.title %}{{ bundle.meta.title|title }}{% else %}{{ bundle.key|title }}{% endif %}{% endmacro %}
+{% macro title(bundle) %}{% if bundle.meta.title %}{{ bundle.meta.title|smartTitle }}{% else %}{{ bundle.key|smartTitle }}{% endif %}{% endmacro %}
 
 {% macro article_tease(bundle, tease_length) %}
     <article class=tease>
         {% set series = plugins.collections.get_collection(bundle, 'series') %}
         {% if series %}
-            <h3 class=pre-title>{{ series.meta.title|title }}</h3>
+            <h3 class=pre-title>{{ title(series) }}</h3>
         {% endif %}
-        <h3 class=title><a href="{{ bundle.url() }}">{{ bundle.meta.title|title }}</a></h3>
+        <h3 class=title><a href="{{ bundle.url() }}">{{ title(bundle) }}</a></h3>
         <h4 class=peak>{{ bundle.meta.publish_time }}
             {% if bundle.tags %}
             <span class=tags>

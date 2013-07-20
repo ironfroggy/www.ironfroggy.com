@@ -93,9 +93,6 @@ def new(key=None):
         if not os.path.exists(part_path):
             os.mkdir(part_path)
 
-    if not params['content']:
-        open(os.path.join('contents', key) + '.rst', 'w')
-
     with open(os.path.join('contents', key) + '.yaml', 'w') as f:
         f.write(template.format(**params))
         if params['series']:
@@ -106,7 +103,7 @@ def new(key=None):
             f.write('topic: ')
             f.write(params['topic'])
             f.write('\n')
-        if params['content']:
-            f.write('content: ')
-            f.write(params['content'])
-            f.write('\n')
+        f.write('content: |')
+        f.write('    ' + params['content'])
+        f.write(params['content'])
+        f.write('\n')

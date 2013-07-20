@@ -5,6 +5,12 @@ created_time: !!timestamp '2013-07-20 09:16:00'
 status: published
 type: post
 template: post.j2
+tags:
+- speaking
+- ncdevcon
+- web
+- offline web apps
+- programming
 content: |
     I'm actually incredibly nervous. My talk is "Offline-First: an Approach to Modern Web Apps",
     and in it I'll be talking about dealing with how the assumptions of the web are turned
