@@ -4,12 +4,16 @@ import datetime
 import string
 
 from fabric.contrib.project import rsync_project
+from fabric.contrib.files import upload_template
 from fabric.api import local, run, sudo
 from fabric.state import env
 
+env.hosts = ['192.241.197.18']
+env.user = local('whoami').strip();
+env.deploy_dir = '/var/www/'
 
-env.hosts = ['www.ironfroggy.com']
-env.user = 'calvin'
+def root():
+    env.user = 'root'
 
 def clean():
     local('find . -name "*.swp" -delete')
@@ -19,7 +23,38 @@ def build():
     local('jules build -f')
 
 def deploy(delete=True):
-    rsync_project('/domains/www.ironfroggy.com/default/', '_build/', delete=delete)
+    rsync_project(env.deploy_dir, '_build/', delete=delete)
+
+def update_apache():
+    rsync_project('apache.conf', '/etc/apache2/', delete=False)
+
+def setup_domain(domain):
+    sudo('mkdir /var/www/%s' % (domain,))
+
+def user_create(user):
+    user = user or local('whoami').strip()
+    sudo('adduser --disabled-password --gecos "" %s' % (user,))
+    user_key(user)
+
+def user_key(user):
+    sudo('mkdir -p /home/%s/.ssh/' % (user,))
+    sudo('chown {0}:{0} /home/{0}/.ssh/'.format(user))
+    sudo('chmod go= /home/{0}/.ssh/'.format(user))
+    sudo('chmod u=rwx /home/{0}/.ssh/'.format(user))
+    pubkey_path = os.path.join(os.path.expanduser('~'+user), '.ssh', 'id_rsa.pub')
+    pubkey = open(pubkey_path).read()
+    run('echo "%s" >> /home/%s/.ssh/authorized_keys' % (pubkey, user))
+    sudo('chmod u=rwx /home/{0}/.ssh/authorized_keys'.format(user))
+
+def user_pw():
+    run('passwd')
+
+def setup_domain_user():
+    username = local('whoami')
+
+def domain(domain):
+    env.domain = domain
+    env.deploy_dir += domain + '/'
 
 def update():
     clean()
