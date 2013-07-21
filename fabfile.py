@@ -19,8 +19,11 @@ def clean():
     local('find . -name "*.swp" -delete')
     local('rm -fr _build/*')
 
-def build():
-    local('jules build -f')
+def build(deployprefix=None):
+    if deployprefix:
+        local('jules build -f -d ' + deployprefix)
+    else:
+        local('jules build -f')
 
 def deploy(delete=True):
     rsync_project(env.deploy_dir, '_build/', delete=delete)
