@@ -25,7 +25,11 @@ def build(deployprefix=None):
     else:
         local('jules build -f')
 
+def localbuild(port='8000'):
+    local('jules build -f -D -d localhost:' + port)
+
 def deploy(delete=True):
+    build()
     rsync_project(env.deploy_dir, '_build/', delete=delete)
 
 def update_apache():

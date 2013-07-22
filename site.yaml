@@ -22,7 +22,7 @@ ignore:
 - "*.swo"
 - "~*"
 bundle_defaults:
-    output_ext: "html"
+    output_ext: ""
     render: jinja2
 collections:
     tags:
