@@ -83,8 +83,8 @@ def new(key=None):
     params = dict(
         title = raw_input("title: "),
         key = key or raw_input("path: "),
+        tags = raw_input('tags: ').split(','),
         series = raw_input("series: "),
-        topic = raw_input("topic: "),
         now = datetime.datetime.now().strftime(DATEFMT),
         content = raw_input("content: "),
     )
@@ -100,17 +100,30 @@ def new(key=None):
         if not os.path.exists(part_path):
             os.mkdir(part_path)
 
-    with open(os.path.join('contents', key) + '.yaml', 'w') as f:
+    post_path = os.path.join('contents', key) + '.yaml'
+    with open(post_path, 'w') as f:
         f.write(template.format(**params))
         if params['series']:
             f.write('series: ')
             f.write(params['series'])
             f.write('\n')
-        if params['topic']:
-            f.write('topic: ')
-            f.write(params['topic'])
-            f.write('\n')
+
+        f.write('tags:\n')
+        for tag in params['tags']:
+            f.write('- ' + tag + '\n')
+
         f.write('content: |\n')
         f.write('    ' + params['content'] + '\n')
         f.write(params['content'])
         f.write('\n')
+
+        for filename in os.listdir('queue'):
+            lines = list(open(os.path.join('queue', filename)))
+            for line in lines:
+                f.write('    ' + line)
+            os.unlink(os.path.join('queue', filename))
+
+    local('git add %s' % (post_path,))
+    local('git commit -m "Added %S"' % (params['title'],))
+
+    localbuild()

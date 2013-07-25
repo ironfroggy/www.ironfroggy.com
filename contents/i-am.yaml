@@ -12,6 +12,8 @@ content: |
 
     I am a Vegan.
 
+    I am Bisexual.
+
     I am an Atheist.
 
     I am a Feminist.
@@ -22,8 +24,8 @@ content: |
 
     I am an Introvert.
 
-    I am a Programmer and Software Enthusiast.
+    I am a :doclink:`Programmer and Software Enthusiast <software>`.
 
-    I am a Writer.
+    I am a :doclink:`Writer <writing>`.
 
     I am a Gamer.

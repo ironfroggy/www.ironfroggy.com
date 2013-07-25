@@ -80,11 +80,13 @@
         <h3><a href="{{ engine.get_bundle(key="programming").url() }}">Calvin is a Programmer <span class="glyph general">u</span></a></h3>
         <p>who writes about and works with Python, Django, Javascript, NodeJS, and HTML5</p>
 
+        <!--
         <h3><a href="{{ engine.get_bundle(key="writing").url() }}">... a Writer <span class="glyph general">u</span></a></h3>
         <p>who is rekindling a love of reading and writing, and working towards publishing his first short stories and novel</p>
 
         <h3><a href="{{ engine.get_bundle(key="personal").url() }}">... a Person <span class="glyph general">u</span></a></h3>
         <p>who is passionate about feminism, queer activism, veganism, and driving redistributing wealth</p>
+        -->
         
         {% if bundle.key != "index" %}
             <h3>Posts</h3>
@@ -103,7 +105,7 @@
 
         <h3>Tags</h3>
         <ul class=list>
-        {% for tag in collections['tags'] %}
+        {% for tag in collections['tags']|sort(attribute='value') %}
             {% if tag.active %}
                 <li><a href="{{ tag.url() }}">{{ tag.value }}</a></li>
             {% endif %}
