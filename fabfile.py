@@ -29,6 +29,9 @@ def localbuild(port='8000'):
     local('jules build -f -D -d localhost:' + port)
 
 def deploy(delete=True):
+    now = datetime.datetime.now()
+    local('git commit -am "Committing deploy version at %s"' % now.strftime('%Y-%m-%d %H:%M'))
+    local('git push')
     build()
     rsync_project(env.deploy_dir, '_build/', delete=delete)
 
