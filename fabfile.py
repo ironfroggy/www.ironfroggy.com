@@ -30,8 +30,9 @@ def localbuild(port='8000'):
 
 def deploy(delete=True):
     now = datetime.datetime.now()
-    local('git commit -am "Committing deploy version at %s"' % now.strftime('%Y-%m-%d %H:%M'))
-    local('git push')
+    if local('git diff', capture=True).strip():
+        local('git commit -am "Committing deploy version at %s"' % now.strftime('%Y-%m-%d %H:%M'))
+        local('git push')
     build()
     rsync_project(env.deploy_dir, '_build/', delete=delete)
 
