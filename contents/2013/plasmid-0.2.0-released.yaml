@@ -1,0 +1,17 @@
+title: "Plasmid 0.2.0 Released - API Stable and Tested"
+publish_time: !!timestamp '2013-08-07 06:08:00'
+updated_time: !!timestamp '2013-08-07 06:08:00'
+created_time: !!timestamp '2013-08-07 06:08:00'
+status: published
+type: post
+template: post.j2
+series: projects/plasmid/releases
+tags:
+- plasmid
+- programming
+- software
+- javascript
+- indexeddb
+content: |
+    
+
