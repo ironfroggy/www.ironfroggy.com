@@ -124,6 +124,6 @@ def new(key=None):
             os.unlink(os.path.join('queue', filename))
 
     local('git add %s' % (post_path,))
-    local('git commit -m "Added %S"' % (params['title'],))
+    local('git commit -m "Added %s"' % (params['title'],))
 
     localbuild()
