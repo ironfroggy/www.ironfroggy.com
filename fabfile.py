@@ -33,10 +33,10 @@ def deploy(delete=True):
         local('git commit -am "Committing deploy version at %s"' % now.strftime('%Y-%m-%d %H:%M'))
         local('git push')
     build()
-    rsync_project(env.deploy_dir, '_build/', delete=delete)
+    rsync_project(env.deploy_dir, '_build/', delete=delete, user=env.user)
 
 def update_apache():
-    rsync_project('apache.conf', '/etc/apache2/', delete=False)
+    rsync_project('apache.conf', '/etc/apache2/', delete=False, user=env.user)
 
 def setup_domain(domain):
     sudo('mkdir /var/www/%s' % (domain,))
