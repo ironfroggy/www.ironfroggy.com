@@ -8,7 +8,7 @@ from fabric.contrib.files import upload_template
 from fabric.api import local, run, sudo
 from fabric.state import env
 
-env.hosts = ['192.241.197.18']
+env.hosts = ['www.ironfroggy.com']
 env.deploy_dir = '/var/www/'
 
 def root():
