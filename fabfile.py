@@ -9,6 +9,7 @@ from fabric.api import local, run, sudo
 from fabric.state import env
 
 env.hosts = ['www.ironfroggy.com']
+env.user = 'calvin'
 env.deploy_dir = '/var/www/'
 
 def root():
