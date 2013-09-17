@@ -8,8 +8,8 @@ from fabric.contrib.files import upload_template
 from fabric.api import local, run, sudo
 from fabric.state import env
 
-env.hosts = ['192.241.197.18']
-env.user = local('whoami').strip();
+env.hosts = ['www.ironfroggy.com']
+env.user = 'calvin'
 env.deploy_dir = '/var/www/'
 
 def root():
@@ -30,8 +30,9 @@ def localbuild(port='8000'):
 
 def deploy(delete=True):
     now = datetime.datetime.now()
-    local('git commit -am "Committing deploy version at %s"' % now.strftime('%Y-%m-%d %H:%M'))
-    local('git push')
+    if local('git diff', capture=True).strip():
+        local('git commit -am "Committing deploy version at %s"' % now.strftime('%Y-%m-%d %H:%M'))
+        local('git push')
     build()
     rsync_project(env.deploy_dir, '_build/', delete=delete)
 
