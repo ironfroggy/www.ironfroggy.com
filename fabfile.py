@@ -10,7 +10,12 @@ from fabric.state import env
 
 env.hosts = ['www.ironfroggy.com']
 env.user = 'calvin'
-env.deploy_dir = '/var/www/'
+
+
+def domain(domain):
+    env.domain = domain
+    env.deploy_dir = '/var/www/' + domain + '/'
+domain('www.ironfroggy.com')
 
 def root():
     env.user = 'root'
@@ -62,10 +67,6 @@ def user_pw():
 
 def setup_domain_user():
     username = local('whoami')
-
-def domain(domain):
-    env.domain = domain
-    env.deploy_dir += domain + '/'
 
 def update():
     clean()
