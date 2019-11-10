@@ -1,0 +1,11 @@
+title: "Back on all my Best Bullshit"
+publish_time: !!timestamp '2019-11-05 23:30:00'
+updated_time: !!timestamp '2019-11-05 23:30:00'
+created_time: !!timestamp '2019-11-05 23:30:00'
+status: published
+type: post
+template: post.j2
+# series: 2013/edge-conf
+tags:
+- programming
+- personal

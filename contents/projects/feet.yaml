@@ -1,0 +1,15 @@
+title: Feet
+type: project
+template: post.j2
+render: jinja2
+link_to: http://github.com/ironfroggy/feet
+content: |
+  It makes Python run.
+
+  It makes it easy to create Python scripts, programs, applications, or games and package them up to send to friends, users, players, or whomever you want to share your work with. FEET is currently being built for Windows, but Linux and Mac versions will hopefully arrive in the future!
+
+  FEET is just an executable, called feet.exe, that sits in a folder beside your script that you name main.py. You can zip up this folder and send it to anyone else on a Windows machine, and when they click the EXE, your program will run. They don't need to install Python and you never need to build or package anything.
+
+  Just send them your files and the runner.
+
+  When users run your program via feet.exe the first time, it will unpack a runtime to a feet/ sub-folder. You can remove this at any time, especially before zipping your program to share.

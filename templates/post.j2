@@ -21,6 +21,11 @@
 {% endblock %}
 
 {% block mid_column %}
+    {% if bundle.meta.link_to %}
+        <div>
+            <a href="{{ bundle.meta.link_to }}" target="_new">{{ bundle.meta.link_to }} <span class="glyph general">u</span></a>
+        </div>
+    {% endif %}
     {% if bundle.meta.publish_time %}
         <h4>Published {{ bundle.meta.publish_time.strftime('%Y/%m/%d') }}</h4>
     {% endif %}

@@ -1,0 +1,15 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+jules = {editable = true,path = "./../jules"}
+
+[packages]
+jules = "*"
+fabric = "==1.14.1"
+pygments = "*"
+
+[requires]
+python_version = "2.7"

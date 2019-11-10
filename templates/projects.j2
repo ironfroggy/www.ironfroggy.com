@@ -17,7 +17,7 @@
 {% endblock %}
 
 {% block content %}
-    {% for bundle in engine.get_bundles_by("title", "desc", type="project") %}
+    {% for bundle in engine.get_bundles_by("title", "asc", type="project") %}
         <article class=tease>
             {% if bundle.url() %}
                 <h3><a href="{{ bundle.url() }}">{{ bundle.meta.title|title }}</a></h3>

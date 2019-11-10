@@ -3,8 +3,8 @@ import re
 import datetime
 import string
 
-from fabric.contrib.project import rsync_project
-from fabric.contrib.files import upload_template
+#from fabric.contrib.project import rsync_project
+#from fabric.contrib.files import upload_template
 from fabric.api import local, run, sudo
 from fabric.state import env
 
