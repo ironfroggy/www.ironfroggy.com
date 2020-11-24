@@ -22,9 +22,23 @@ ignore:
 - "*.swo"
 - "~*"
 bundle_defaults:
-    output_ext: ""
+    output_ext: "html"
     render: jinja2
 collections:
+    year:
+        group_by:
+            is: year
+        meta:
+            render: jinja2
+            template: archive.j2
+            output_ext: ""
+    month:
+        group_by:
+            is: month
+        meta:
+            render: jinja2
+            template: archive.j2
+            output_ext: ""
     tags:
         match:
             status: published

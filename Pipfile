@@ -4,13 +4,16 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-jules = {editable = true,path = "./../jules"}
+jules = {editable = true, path = "./../jules"}
+"straight.plugin" = {editable = true, path = "./../straight.plugin"}
+"straight.command" = {editable = true, path = "./../straight.command"}
 
 [packages]
-jules = "*"
-fabric = "==1.14.1"
+jules = {editable = true, path = "./../jules"}
+fabric = "==2.5.0"
 pygments = "*"
 bs4 = "*"
+watchdog = {extras = ["watchmedo"], version = "*"}
 
 [requires]
-python_version = "2.7"
+python_version = "3.8"

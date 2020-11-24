@@ -47,6 +47,13 @@
         {% endfor %}
         </ul>
     {% endfor %}
+    {% if bundle.meta['collections'].get('month') %}
+        <ul class=list>
+        {% for month in bundle.meta['collections'].get('month', {}) %}
+            <li><a href="{{ month.url() }}">{{ month.value }} Archive</a></li>
+        {% endfor %}
+        </ul>
+    {% endif %}
     {% if bundle.meta['collections'].get('tags') %}
         <h3>Tags</h3>
         <ul class=list>

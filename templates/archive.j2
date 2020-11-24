@@ -1,0 +1,21 @@
+{% extends "index.j2" %}
+
+{% block extra_head %}
+    {{ super() }}
+    <link href="http://{{ config.domain }}/feeds/{{ bundle.key }}/atom.xml" type="application/atom+xml" rel="alternate" title="www.ironfroggy.com/feeds/{{ bundle.key }} ATOM feed" />
+{% endblock %}
+
+{% block header_right %}
+    {% if bundle.meta.title %}
+        <h1 class=title>{{ bundle.meta.title|title }}</h1>
+    {% else %}
+        <h1 class=title><em>Archive from {{ bundle.value }}</em></h1>
+    {% endif %}
+    <a href="http://{{ config.domain }}/feeds/{{ bundle.key }}/atom.xml"><img src="/images/rss_icon.png" /></a>
+{% endblock %}
+
+{% block content %}
+    {% for bundle in bundle.get_bundles_by("publish_time", "desc", status="published") %}
+        {{ article_tease(bundle, 1000) }}
+    {% endfor %}
+{% endblock %}
