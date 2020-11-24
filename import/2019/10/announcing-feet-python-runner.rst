@@ -1,0 +1,54 @@
+I've been working on a problem that's bugged me for about as long as
+I've used Python and I want to announce my stab at a solution, finally!
+I've been working on the problem of "How do i get this little thing I
+made to my friend so they can try it out?" Python is great. Python is
+especially a great language to get started in, when you
+don't know a lot about software development, and probably don't even
+know a lot about computers in general.
+Yes, Python has a lot of options for tackling some of these distribution
+problems for games and apps. Py2EXE was an early option, PyInstaller is
+very popular now, and PyOxide is an interesting recent entry. These can
+be great options, but they didn't fit the kind of use case and
+experience that made sense to me. I'd never really been about to put my
+finger on it, until earlier this year:
+Python needs `LÖVE <https://love2d.org/>`__.
+LÖVE, also known as "Love 2D", is a game engine that makes it super easy
+to build small Lua games and share them. Before being a game engine, a
+graphics library, or anything else: LÖVE is a *portable runtime* that's
+perfect for distribution these games.
+The trick is skipping the build process entirely. We've tackled the
+distribution problems in Python over the years with many tricks to build
+self-contained executables of our Python projects. These work, but they
+add extra steps and infrastructure to projects. They add another set of
+new, unfamiliar things to learn for newcomers getting in between their
+excitement over having built their first thing
+to show off and their actually being able to share it with anyone.
+Learning to make your first Pygame game and then immediately having no
+idea how to get in someone else's hands can be a really demoralizing
+barrier. So, I set out to replicate the LÖVE model in Python.
+However, I didn't want to build a game engine. I didn't want to reinvent
+wheels and Python already has many of them. I wanted to combine the
+Python language with the workflow of LÖVE projects and built on top of
+the huge ecosystem of Python tooling and libraries, like wxWindows and
+Pyglet and Numpy. I just wanted a way to make Python projects run.
+So I built `Feet, a Python
+Runner <https://github.com/ironfroggy/feet>`__.
+Feet is different than executable generators like PyInstaller. There is
+no build step. You don't even need to install Python. Feet is a complete
+Python runtime that sits inside your project and provides an obvious EXE
+for users to double-click. It runs a main.py file in your project and
+runs it, but it also lets you manage packages from the Python ecosystem.
+That's the real magic sauce. If you distribute a requirements.txt with
+your project, it'll install the dependencies for your user, locally to
+the project, and run everything out of the box, or you can package the
+whole thing up (dependencies included) and hand your users a single Zip
+or EXE file.
+There will be a lot of work ahead to make Feet everything it can be for
+the Python community. I hope to talk more about why I've wanted to solve
+this problem for nearly *twenty years* now and also share technical
+details about what I'm doing with Feet.
+For now, please go try it out. Download the EXE release into a Pygame or
+other Python project and try using Feet to run it on Windows without
+having to install Python or package anything. Give me feedback, complain
+in bug tickets, contribute back if you see improvements, or just please
+let me know what you think!

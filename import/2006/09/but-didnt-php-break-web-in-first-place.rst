@@ -1,0 +1,32 @@
+Rasmus Lerdorf is an
+`opinionated <http://www.internetnews.com/dev-news/article.php/3631831>`__
+man.
+However, so am I, so I have some things to say about these particular
+opinions. Lerdorf is claiming the web is broken. I do not disagree.
+Lerdorf is claiming PHP is the cure, and I couldn't disagree more if he
+had written that statement on a shard of tin and jammed it in my
+stomach.
+That is quite a strong disagreement.
+I mean, didn't PHP break the web in the first place?
+Right off the bat, I should note that I do believe PHP can be used well.
+Any language (almost) can be used properly enough that it can be a
+decent environment to use, so long as you follow strict rules. PHP is a
+great example of a language that promotes ignoring any rules. Following
+a good set of policies, one can develop well structured and elegant
+applications with PHP, but the fact of the matter is that the language
+does very little to promote anything in the way of good use of itself.
+PHP might not promote bad coding, but it simply does so little in the
+way of promoting good code that it might as well provide facilities for
+plaintext passwords in query strings built in at the global level. There
+are too many aspiring developers finding their way to PHP, being drawn
+by the crowd, rather than the quality of the language. There is a
+critical mass of bad information about all the wrong ways we can do
+things in PHP, and none of them tell you its the wrong way. Are they
+evil? No, they just don't know any better either.
+PHP is not evil. PHP broke the web with nothing but good intentions. PHP
+still broke the web, and only with a massively backwards-compatibility
+breaking (and that means no options to enable it back!) revisions to the
+language would anything be remedied. Even in that case, either everyone
+will migrate to other languages or the language would fork, because the
+only way to fix PHP is to become like Perl 6 and not exist at all.
+I am beginning to sound like a language bigot.

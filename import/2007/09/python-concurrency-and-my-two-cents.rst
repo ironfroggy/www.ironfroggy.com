@@ -1,0 +1,56 @@
+.. container::
+
+   This is not the first and it will not be the last that I write about
+   the state of concurrency in Python, comment about some debate going
+   on in the community, and outline what I think we need to solve any
+   apparent problems and capitalize on what a lot of us think is the
+   future of software development. Anyone following the Python blogs is
+   bound to have caught wind of the Guido-Eckle debate about what Python
+   3.0 has become, compared to what it could have been. This was
+   followed immediately by an `open
+   letter <http://blog.snaplogic.org/?p=94>`__ from
+   `Juergen <http://blog.snaplogic.org/?author=5>`__\ of SnapLogic about
+   the GIL. I feel sure this has all happened again and that all parties
+   involved are just playing some recorded macros.
+   The most compelling case we have right now against the arguments to
+   remove the GIL are two. Firstly, it was already done! A branch of
+   Python removed the GIL many years ago and actually found a two
+   core/cpu system would run the same code slower, due to all the
+   locking involved to protect mutable structures. So, while people
+   continually say that the GIL needs to be removed, gets in their way,
+   and generally is a wart on Python, we need to remind them that its
+   been done and it was a bad idea. The GIL is not being kept in as a
+   product of laziness.
+   Secondly, threading is not the definitive answer to concurrency
+   needs! This is a really important one, because one of the areas that
+   I always see the Python community strive at is finding the right way
+   to replace the popular way. Threads are very popular in a lot of
+   circles, but there is a huge consensus that they are simply a
+   misrepresented de facto with little in the way of justifying the use
+   they see. The Java world, in particular, seems to think that throwing
+   threads at a problem can solve it. What we have to realize is how
+   many problems are caused by threading and if they outweigh the
+   benefits. A lot of us can't see those benefits through all that cost,
+   so we've looked in other places for concurrency, and we've found it.
+   In some ways, the GIL acts as a deterrent to force us into finding a
+   better way. I, for one, am all for keeping it around just for that
+   reason.
+   Where can I really go with this? Not far. I could ramble and rant
+   about processes being better concurrency primitives than threads, but
+   I don't feel this is the time or the place. But, please, can we stop
+   asking for the GIL to be removed? No on is going to listen to that
+   plea. The issue is going to come up again, and that is absolutely a
+   promise. We're going to see this again and again, until we have
+   something solid, standard, and powerful enough to distract the thread
+   lovers from the GIL issues. I don't know what that solution is, but
+   we need to figure it out soon. Guido is right, of course, and this is
+   a library issue, not a language issue. However, we can't deny what
+   value this library issue has for the language, and a little
+   encouragement or name dropping on his part might do well to push a
+   good answer to the forefront. Eventually, something needs to get to
+   the point that we can bring it into the standard library and say
+   "This is how you do concurrency in Python."
+   Who wants to answer the great question? Step up.
+   Technorati Tags: `python <http://technorati.com/tag/python>`__,
+   `threading <http://technorati.com/tag/threading>`__,
+   `concurrency <http://technorati.com/tag/concurrency>`__

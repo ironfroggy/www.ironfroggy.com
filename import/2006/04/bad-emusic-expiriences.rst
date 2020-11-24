@@ -1,0 +1,18 @@
+Has anyone has had a bad expirience with eMusic? Lured by promises of
+DRM-free MP3 files, like so many others, I signed up for a trial of
+their service. I was unimpressed with the selection, although I
+understand the problem they face trying to convince the labels that
+their methods are financially safe for the music industry. Still, my
+wife and I were unable to find even a handful of songs we were
+interested in, and I found it impossible to actually download anything.
+Their download manager gave me an error about some non-existant cache
+directory within my Firefox installation, and their support offered no
+help that actually solved the problem, just a standard "Reinstall the
+program and try it again." Realizing the service would not be worth the
+$9.99 per month, I cancelled my account and didn't look back.
+Until they charged my bank account two weeks later and caused me a
+series of cascading overdraft fees that I've had to lodge a complaint
+with my bank to clear up. I contacted eMusic about this issue, and they
+will not respond, so my bank is looking into this matter for me. Thank
+god for fraudulent charge protection on my Visa, because the month of
+eMusic I didn't even want almost cost me $73.99 plus a massive headache.

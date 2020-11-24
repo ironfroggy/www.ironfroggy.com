@@ -1,0 +1,10 @@
+Took me a few hours to track down a problem with importing win32com and
+getting "ImportError: DLL load failed: The specified module could not be
+found" which wasn't very clear. I doesn't even say what DLL it can't
+find!
+Long story short, it boils down to python not being able to find the
+pywintypes25.dll, which is located in C:\Python24, but which is not in
+the PATH. Seems like having C:\Python25 added to PATH or some other
+solution would be a good idea. The problem wasn't even with the pywin32
+package, which is what I expected and where I kept looking, but in the
+configuration and runtime environment of the python interpreter.

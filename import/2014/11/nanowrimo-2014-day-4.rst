@@ -1,0 +1,28 @@
+| I ended today with only 6671 words. Staying on par would have been
+  6667 so I was only four words over, and worse I only wrote 1600 words
+  today. That's technically under goal for the day, but I'm on pace for
+  the month. I made the mistake of not getting even a little writing
+  time in during the morning, before work, so I had everything to do
+  sitting down at night. If I aim to get back on track I need to get in
+  30 minutes tomorrow morning and the mornings after that, giving myself
+  a head start for the day.
+| Jory MacKay's *How I Forgot to Write* was a particularly personally
+  hitting piece to read as my daily writing motivation. If we aren't
+  careful we can let the skills we have wane and that is certainly
+  something I think happened to me at some point in the last five years,
+  and regaining those skills is a big part of what I'm doing NaNoWriMo.
+| The six-step program outlined is full of gems. Among the two that I
+  hold most closely to my own writing: Find a routine and Learn to love
+  editing. From these two the most important lines I'm carrying away
+  today will help motivate me.
+
+   what matters is that you set a schedule and stick to it.
+
+|  and
+
+   Writing *is* editing.
+
+|  But, really, you should `read the whole
+  piece <https://medium.com/@JoryMacKay/how-i-forgot-to-write-fe70ddfd188>`__.
+| *See all my posts about*\ `NaNoWriMo
+  2014 <http://techblog.ironfroggy.com/search/label/nanowrimo%202014>`__

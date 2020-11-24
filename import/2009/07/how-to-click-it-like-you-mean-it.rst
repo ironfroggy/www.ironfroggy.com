@@ -1,0 +1,40 @@
+Yes, this is a screenshot of a screenshot. Stick with me, but I really
+do has a point to this! I have to admit, publicly, that I clicked the
+button. The one in the screenshot. The one that isn't a button, just a
+PNG image. I should be glad it wasn't a pop-up!
+|image0|
+I realized my mistake at the moment I was clicking on it, but it
+happened to fast to stop. I had to sit and think for a moment. Why did I
+do that? It drove me to write this pretty immediately and do a couple
+mock ups for solutions. I never want to let my users loose information
+or control over it. That is, we don't want them to OK a message away and
+neglect to actually read it and we don't want them to click "send"
+before they're really, really ready to confess their never ending love
+to Glenn Beck.
+Those are two distinct safety nets. Information the user missing for
+being click-happy and actual actions within the application they might
+have wanted to avoid. Any reversible actions, like closing a dialog box
+or deleting something (if a copy is kept around for safety) should be
+given easy undo options. Even closing an entire window, if made easy,
+should be something you can undo.
+|image1|\ Of course, you can't undo sending an email or formatting a USB
+drive. You can undo an archive and compress operation that replacing the
+original files, by extracting them (even if the extraction is bound to
+an undo button), but if the undo is sufficiently expensive, give me the
+chance to avoid it in the first place, please. Make to pause and think
+about what I'm doing first.
+|image2|\ Of course, a lot of us are doing web apps today, so it gives
+us some limitations. It also means, if you want to be friendly to your
+users, you probably shouldn't use default dialog boxes at all. Now, we
+might look at wrapping some. An alert_with_undo() javascript function,
+anyone?
+
+.. |image0| image:: http://4.bp.blogspot.com/_wACg_J16I_8/Sl-KV2EnReI/AAAAAAAAAHs/7bY021AQ_kk/s400/oops_i_clicked_it_again.png
+   :name: BLOGGER_PHOTO_ID_5359154189490931170
+   :target: http://4.bp.blogspot.com/_wACg_J16I_8/Sl-KV2EnReI/AAAAAAAAAHs/7bY021AQ_kk/s1600-h/oops_i_clicked_it_again.png
+.. |image1| image:: http://4.bp.blogspot.com/_wACg_J16I_8/Sl-VdRuhUII/AAAAAAAAAH0/pzV3ewbzAzg/s400/oops_i_clicked_it_again_undo.png
+   :name: BLOGGER_PHOTO_ID_5359166411801448578
+   :target: http://4.bp.blogspot.com/_wACg_J16I_8/Sl-VdRuhUII/AAAAAAAAAH0/pzV3ewbzAzg/s1600-h/oops_i_clicked_it_again_undo.png
+.. |image2| image:: http://1.bp.blogspot.com/_wACg_J16I_8/Sl-WItC1xPI/AAAAAAAAAH8/TOIiPvGJjgY/s400/oops_i_clicked_it_again_warping.png
+   :name: BLOGGER_PHOTO_ID_5359167157868807410
+   :target: http://1.bp.blogspot.com/_wACg_J16I_8/Sl-WItC1xPI/AAAAAAAAAH8/TOIiPvGJjgY/s1600-h/oops_i_clicked_it_again_warping.png

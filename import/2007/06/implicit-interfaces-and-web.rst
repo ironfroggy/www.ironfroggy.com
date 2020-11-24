@@ -1,0 +1,70 @@
+| The best interface to software might be doing nothing at all. Implicit
+  interfaces are gaining mindshare. This is not a new idea. Amazon
+  improves your experience based on your habits, for example. Google
+  increasingly employs subtle, personal weighting of our search results.
+  In `The Implicit
+  Web <http://www.readwriteweb.com/archives/the_implicit_web_lastfm_amazon_google.php>`__,
+  `Alex Iskold <http://www.readwriteweb.com/about_alex.php>`__ talks
+  about the services of Amazon, Google, and Last.fm. All of them take
+  advantage of the implicit actions of their users. Last.fm lets us
+  track, publish, and find songs we listen to and like, and after
+  installation, I forget it most of the time I use it.
+
+Implicit Today
+==============
+
+| A number of services have risen that really should be implicit, but
+  are not. This might be caused by implicit interfaces' very nature of
+  being unseen. Although they can be wonderful ways to interact with our
+  networks, they are difficult to deploy. Developing the algorithms to
+  translate user behavior into user interaction, without hindering the
+  user experience, can be difficult. Even coming up with an idea for
+  employing implicitness is difficult.
+
+| The ultimate implicit application might be Google, when taken in terms
+  of number of users. Their intuitive Page Rank system turns millions of
+  web pages interlinking between one another and turned it into a social
+  ranking system. Digg, reddit, and their clones are hot news these
+  days; however, we can't deny that they have done little more than turn
+  what was implicit into something explicit. The change has good and bad
+  qualities. An ironic note: Google seems completely unimpressed with
+  social services, being the only major player expressing no interest in
+  a service like social bookmarks. At least, this might appear to be the
+  case, at first glance. However, when we take note that Google's entire
+  business is built on the idea of utilizing the links on our web pages
+  as votes, we find they were ahead of the game and have the largest
+  social bookmarking site on the internet. The only missing features are
+  associating the websites with actual people.
+
+Why the Explicitness
+====================
+
+| If Google were so successful with the first massively deployed
+  implicit interface, why would sites adapt the pattern into explicit
+  voting systems? The migration from searching to sifting is a probable
+  cause. The original Google model works great for mostly static
+  content. Asking the popular search engine "What's new?" is not easy,
+  and this is an angle explicit services employ. Social networks are
+  nothing new, but the personal and explicit aspects are newly pushed. A
+  search engine tells you which webpages are popular, but thinks knowing
+  who agrees is less important. They also have a hard time
+  distinguishing between things you `like <http://www.sluggy.com/>`__
+  and things you do `not like <http://www.myspace.com/>`__.
+
+Implicit Tomorrow
+=================
+
+We need to evaluate what makes a good system, which explicit interfaces
+can become implicit, and what naturally implicit features to improve.
+Embracing the implicit areas leads to a higher level of user
+involvement, because they can be involved when they are unaware of it.
+However, making the user aware of the affects of their implicit
+interactions might be exactly the sort of thing the user needs to
+understand these services are actually there and valuable. There is
+little market for sites that asks you manually rank books and movies and
+recommend more to you. Amazon made its business on doing just that,
+because it takes information automatically and makes it obvious to the
+user what value they are getting. I routinely buy books from my Amazon
+page, because I know my habits are tuned it into a great place for me to
+find what I need. The implicit is there, but I explicitly take advantage
+of it.

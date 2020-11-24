@@ -1,0 +1,57 @@
+|image0|\ The development sub-blogosphere is abuzz with responses and
+responses to responses on the debate over `splitting up
+developers <http://www.codinghorror.com/blog/archives/001002.html>`__
+`into two camps <http://blog.red-bean.com/sussman/?p=82>`__. The core
+idea is that 20% of us care about software development and 80% of us
+just do our job and go home. We all like to think we're in the 20% and
+we probably are, because the 80% doesn't care enough to recognize the
+distinction. They might recognize those few geeks at the office who
+don't seem to have a life, of course. Is the debate centering around who
+is what group and what it means or that we are grouping so bluntly in
+the first place? Well, we are a binary loving people, after all.
+For the 20% This Means...
+We love to self comment. We're a relatively small slice of the populace
+spending an unusual amount of time talking about ourselves and this
+whole deal just exposes that. Who reads about the split between the
+developers that care and the developers that just pay the bills? Not the
+bill payers. Even if this all centers around what `Mort can
+accomplish <http://www.nikhilk.net/Personas.aspx>`__ and what motivates
+him, he'll never read a word of it. Not much about this affects the 20%
+directly, so it leaves you wondering in this debate: what the hell is
+the point?
+For the 80% This Means...
+It means nothing to those who don't pay attention to what we're saying,
+and that is a defining characteristic of the people this whole thing
+centers around. We might be an inwardly reflecting collective of people,
+but this is the beginnings of the most important realization of our
+industry: that we are not our industry. Democratically speaking, we just
+want to do the job and go home. If we want all the improvements to
+process and quality we strive for, we need to make it for those of us,
+most of us, who don't give a damn about those very things.
+I have friends doing this job because they "know about computers" so it
+seemed like a good fit or simply heard that "programmers make a lot of
+money." They do not read blogs and they refuse to stop using Notepad.
+I'm finally seeing a small interest in running Linux, but that's only
+because it might be getting to be an easier alternative, not a more
+powerful one. I can't get them to read books, talk about software, or
+understand why version control is better than tossing the code into a
+zip file every now and then, if they even do that.
+What this means for the Morts is only what we make it for them. None of
+the things we're saying matter in their world, so the only differences
+are going to be what we actively decide to do about it. If we really
+care about the end result of quality in the work we produce, then we're
+going to need to stop talking and start walking. Put policies in place,
+work your way into management, and plaster the bathrooms with Google
+Testing material. Witness in the name of giving a crap about the
+software you write!
+In the End it all Means...
+In the end it should teach us to be less self reflective. We can't keep
+debating inward. We need outreach programs. Inner city schools are
+taught the dangers of guns and drugs, but the code pushers of the world
+need us to push all the things on them we don't realize isn't known.
+Worse Than Failure has all of its material because the 20 and the 80
+never talk.
+
+.. |image0| image:: http://2.bp.blogspot.com/_wACg_J16I_8/R1T2V7fQ2MI/AAAAAAAAACo/QvbDYStneXE/s400/unbalenced.png
+   :name: BLOGGER_PHOTO_ID_5140003931343083714
+   :target: http://2.bp.blogspot.com/_wACg_J16I_8/R1T2V7fQ2MI/AAAAAAAAACo/xVQSsa_t0Gc/s1600-R/unbalenced.png

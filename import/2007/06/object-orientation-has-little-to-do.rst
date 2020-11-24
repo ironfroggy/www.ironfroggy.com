@@ -1,0 +1,55 @@
+| I would like to declare that the word "Object" from "Object Orientated
+  Programming" is damaging to any benefits. If this seems
+  counter-intuitive, you should keep reading. This is a case where the
+  title is harmful to the subject. Some people take things too far and
+  imagine some requirement for the concept of an object, and forbid
+  anything outside their definition. If we understand the real benefits
+  of OOP, the inappropriateness of such object-enthusiasm becomes clear.
+
+| Do objects matter? Using a traffic simulation example, we'll say we
+  have instances of a Car class. We add lots of methods, such as
+  accelerate(speed_diff) and implement logic to stop the virtual car at
+  a virtual red light. The non-OO alternative would be functions
+  operating on data describing the state of the vehicle. When we add
+  motorcycles, we non-OO version requires a new function to operate on
+  the new kind of data; or, so we are told. We know the OO way of doing
+  things is to create a Vehicle class and inherit it in both Car and
+  Motorcycle. Somewhere along the way, we loose emphasis of the affect
+  we actually benefit from.
+
+| We benefit from the interface of the "objects", not their virtue of
+  being objects. Too often the consensus you here focuses on completely
+  irrelevant aspects. Methods, classes, and objects are completely
+  without value, if you do not employ the real benefits. The real
+  benefit is that objects have shape, and multiple objects can have the
+  same shape. This can manifest by a single function operating on both
+  cars and motorcycles, for example. This is an obvious benefit to have
+  accelerate() versus accelerate_car() and accelerate_motorcycle(). It
+  does not matter that we pass something you can call an object to the
+  function, but that we can pass different things which act similar
+  enough to be handled uniformly. A very non-OO way would be a function
+  which takes the current speed, and the acceleration, and returns the
+  new speed. The caller would need to get the information, call the
+  function, and change the speed of wherever it is stored. Here, the
+  user is stuck depending on the internals, rather than the shape of the
+  externals.
+
+| There are some common situations, where I hear complaints from new
+  comers to the Python language. The misunderstanding of what OO means,
+  and what a language should do, leads to misunderstandings of Python as
+  a language.
+
+| Getting the length of an object is a great example. You find many Ruby
+  and Java programmers confused or upset that we have no length property
+  on all our objects with a length. The interesting part is the claim
+  that this actually makes Python "less Object Oriented." The fact here
+  is we have a perfectly acceptable model, with common interfaces in a
+  variety of different Python objects. Duck typing is, perhaps, the
+  ultimate goal of object orientation. Mappings, sequences, and
+  iterations are other great examples of shape importance in Python.
+
+Two top reasons are code reuse and design sanity. Centering on
+interfaces gives us both cheaply. We can reuse code, because we only
+care about how it acts, and not what it is. The design of the code is
+cleaner, because we can remove all reference and care related to what we
+are dealing with and treat it uniformly.

@@ -1,0 +1,21 @@
+Windows has given me the opportunity to try some things I was curious
+about, but unable to look into while still using Linux exclusively.
+Namely, the emerging market of Desktop Applet Channels, such as Google
+Desktop, Microsoft's Live.com, and Yahoo Gadgets. I have since tried all
+three of these, but I dislike all of them. I am keeping Google Desktop
+run for the search, photo, and news features, but I have my issues.
+I had applet/gadget/whatever installation problems with all three of
+these, mostly related to having to install things as the Administrator
+but actually running the thing as a normal user. I especially found this
+a bad thing for Google, who I expected to be a little more security
+savvy.
+Trying the three of these out does make me wonder about the possibility
+of some open initiative for something like this. It would probably be
+based on Python, PyXPCOM, and XUL Runner. It should not install applets,
+but cache them from web URLs. I would love to see something like this
+take off. Google might even back it, as it would be easy to integrate
+into Google Desktop panels. Anyone could publish applets for it easily,
+and people could preview them in webpages before even installing the
+client app to use them. Effectively, this could allow us to write
+web-apps that are psuedo-installable as desktop-apps. Just imagine using
+Writely, going out of network range, and continuing its use?

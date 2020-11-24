@@ -1,0 +1,48 @@
+| I haven't posted in a while, but things have been going on. I thought
+  I'd post about some of the more interesting aspects. I've recently
+  began a fairly regular contracting deal with an interesting company,
+  and I'll have to be a little vauge on some aspects, because of NDAs
+  and such.
+| During one of my usual nights of aiding the Pythoners of #python on
+  irc.freenode.net, I was discussing a project someone was trying to
+  complete and the long debate about various routes that could be taken
+  led to me being contracted for the job, which I've had fun with. I've
+  been contracted to build a Fuse package, which uses Amazon's S3 as its
+  storage mechanism. It is a fun system to work with, because of its
+  simplicity and challenging limitations. For example, all operations
+  are redundant, but non-atomic, because the same data could be changed
+  at the same time, and its unpredictable how it would propogate across
+  their redundant network. Mostly this hasn't been an issue, because you
+  have almost the same trust in file locks on a local system anyway, and
+  the only issues have been how to ensure integrity within directory
+  entries and file node chains.
+| This aspect of the work is to be released under the GPL upon
+  completion, and hopefully I can factory out some things that will be
+  useful for other uses of the S3, which I've developed for the use in
+  this project. I'll try to factor out modules for the following
+  features:
+
+-  Define classes that represent a type of data stored in an S3 entry
+-  Easily define meta-attributes, with coercers and defaults
+-  Unique IDs generated for entries
+-  "Sub-Entry" concept, where one entry is owned by another
+-  Caching of data both in disk and over memcache, with an open API to
+   implement other cache-types, like local-memory caches, or even other
+   web services.
+-  Node entries, which can span data across multiple entries for more
+   efficient (and cost effective) reads and writes that do not involve
+   the entire data buffer.
+-  Test facilities for both BitBucket (a Python S3 access package I use)
+   and Python-MemCached, which I use for offline testing. Both mirror
+   all the functionalty (read: most) of the related projects, so they
+   can be tested against without actual network use.
+
+| My work with this project has led to the beginning of a long-term
+  working relationship with the company, which I am very excited about.
+  I can't talk about the specifics of the work I will be doing, until
+  the company launches in a few months. As soon as that happens, I'll be
+  blogging extensively about some of the aspects I can devolge, and of
+  any additional software that might be released freely (I don't know if
+  there will be any).
+| If you are interested, look forward to the S3 packages I'll wrapping
+  up this weekend. Hopefully, someone will find them useful.

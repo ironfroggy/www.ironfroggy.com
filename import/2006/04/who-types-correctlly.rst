@@ -1,0 +1,6 @@
+Even the most computer-literate geeks usually do not use the "proper"
+methods of typing. I've not used it since keyboarding class in Jr High,
+myself. I am wondering, do you use the proper methods or not? Do you
+rest on the home row and hit the space with a thumb and never an index?
+I'm also wondering, has anyone taken the plunge and tried to relearn
+their typing skills after years of doing it the "wrong" way?

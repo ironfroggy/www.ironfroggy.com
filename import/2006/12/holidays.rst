@@ -1,0 +1,36 @@
+I am on vacation. It is very, very nice.
+Even before this, things have been slow. On the edge of worryingly slow,
+but still not slow enough that I've had to fret over anything. I've been
+enjoying some relaxation and time with my growing baby boy and my
+beatiful wife.
+We've taken the holiday with her family and our friends in sunny North
+Carolina, where I have been enjoying warm, sunny weather to start my
+winter. I actually miss the cold.
+Although not much has happened externally, a lot has happened
+internally. I am using the down time to organize myself, my plans, and
+prepare movements forward for proper exploration of some plans I've had
+on the back burner for a while now.
+More of my time has been able to be spent on more recreational
+activities, as well, and that is nice. Reading has been lost to me for
+some time, and I've picked up a few books I've enjoyed. I plan to start
+another blog, which will be focused on reviews of literature developers,
+gamers, and other geeks will enjoy, but not necessarily literature about
+those topics. I want to bring other people in on this one, so if anyone
+is interested in reviewing good books, new or old, contact me
+(ironfroggy (ta) gmail (tod) com).
+Speaking of the holidays and recreation: I got a Wii! I've been loving
+it. I have the WiiSports that came with the system, and the new Zelda,
+but I actually play the WiiSports more, so far. It is so fun. I've been
+taking the system around to friends' houses and we all have sore arms
+from so much bowling, the funest game for multiple people and one
+controller (and maybe my favorite one besides that). Anyway, when I get
+some good online games, I can't wait to play against some others in the
+community.
+My Mii number is 3456 8115 5527 0431.
+So far I can't bowl over a 175, the words "fowl ball" have lost all
+meaning, and I can sleep easier under the delusion that a higher score
+is better, even in golf. Zelda is slow going to start, but I'm enjoying
+it. Kind of obvious how it wasn't started as a Wii game, however. Most
+of the time the wiimote is just used to make a little fairy (with, so
+far, no mention in the game what-so-ever) fly around. And I can fish.
+I will possibly move away from blogspot soon. I need more flexability.

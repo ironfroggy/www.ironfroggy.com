@@ -1,0 +1,112 @@
+.. container::
+
+   I had been pondering some architecture issues after a day of
+   refactoring and cleanup on an HTML5 game I’m building at work. Some
+   common data/UI integration problems were bugging me, mostly just for
+   the feeling of good separation, and I was about to post
+   to\ `r/gamedev <http://www.reddit.com/r/gamedev>`__\ :
+
+**
+**
+
+.. container::
+
+   I'm looking for advice on some minor architect issues in some HTML5
+   gamedev work I've been up to. My background is as a web developer
+   professionally and a very trivial game developer as a hobby, and I"m
+   only recently combining those. However, for lots of reasons related
+   to the positioning of this game as \*part\* of a larger web project
+   at work, it isn't a traditional <canvas> HTML5 game, but being done
+   with a combination of DOM and concern-separated logic.
+
+**
+**
+
+.. container::
+
+   I'm having trouble figuring out how where to draw the lines between
+   the bits that implement my UI and the bigs that run logic behind it,
+   and how to keep them in sync efficiently. There are patterns for
+   this, but I don't feel like my usual approaches make sense in a game
+   context, so I'm looking for any advice you've got.
+
+**
+**
+
+.. container::
+
+   This is a card game, though the situation and question would apply to
+   other types of games, as well. Right now, I have a new refactoring
+   that gives me two parts: a card logic component, which shuffles the
+   deck, draws cards, manages a discard pile, play states, etc; and, all
+   the animations and transitions of the card sprites that I display.
+
+**
+**
+
+.. container::
+
+   BAM. Right there the answer smacked me in the face. And at that
+   moment my first thought was how interesting it is for the act of
+   writing out a problem to trigger the solution in your head, and this
+   isn’t a new idea in the world of even for myself. It is, however,
+   something I want to cultivate, both in myself and others.
+
+**
+**
+
+.. container::
+
+   Write more and often, about your projects.
+
+**
+**
+
+.. container::
+
+   I try to keep a development journal and used to do a better job of
+   it. I’m going to look at setting up some kind of prompt to keep
+   myself reminded through the day and maybe that will help. But, on to
+   the solution here.
+
+**
+**
+
+.. container::
+
+   If I were responding to this post, rather than writing it, maybe this
+   is what I would say:
+
+**
+**
+
+.. container::
+
+   Separation is great, but at some point these different parts just
+   have to talk to each other. At least, something has to connect them.
+   You’re going to be redundant if you model all the card state twice,
+   both in your logic and your UI, so keep one of them dumb. That’s
+   probably going to be the UI.
+
+**
+**
+
+.. container::
+
+   Those visuals need to respond to the state changes in the logic,
+   rather than trying to mirror them.
+
+**
+**
+
+.. container::
+
+   That logic going on, tracking your cards moving between the deck and
+   the hand and discard pile and whatever other states you have needs to
+   allow some reponse to that state changing. When the logic draws a
+   hand from the deck, the visuals need to know which three cards to
+   slide across the screen into your hand. When you play a card, the
+   player needs to see that happen.
+
+Just fire a simple event when the state of a card changes in the logic,
+and let the DOM update accordingly.

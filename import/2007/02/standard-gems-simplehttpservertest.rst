@@ -1,0 +1,4 @@
+Have you ever needed to share some files real quick with real low setup?
+You can start up a web server from the current directory on port 8000
+with a single line of python.
+python -c "from SimpleHTTPServer import test; test()"

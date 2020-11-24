@@ -1,0 +1,24 @@
+| I’m building a Facebook game.
+| Now, don’t worry, you haven’t lost me to the giant beast, my friends.
+  No, I’m just doing a little project, for fun, to both test and
+  demonstrate a number of technologies. I figured something really
+  simple, like Paper Rock Scissors, would be the perfect target.
+| I have the game playable in about three hours this morning. I have
+  more work to do. The point of this is to demonstrate a number of
+  technologies I am trying to push as an expertise, because they are all
+  things we know well and which I think are ready to have their day in
+  the sun, so I can see a lot of need for this coming in. Even such a
+  simple game is demonstrating all of these things.
+
+-  A comet server to push events to the game client in the browser
+-  HTML5 to build a game UI that is flashy, but without Flash
+-  Housing a web app as a Facebook app, for promotion and integration
+   purposes
+-  Utilizing HTML5 for mobile gaming platforms
+
+Today, I have a playable prototype that matches up players, updates
+their scores, and manages the games. There isn’t much UI outside of
+that. It has some problems, but you can play it and have fun. I’m going
+to tackle each of the things above in a separate post, but for today,
+this is what we’re starting with and it will look a hell of a lot better
+when everything is done.

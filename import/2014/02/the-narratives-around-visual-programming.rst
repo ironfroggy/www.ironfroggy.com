@@ -1,0 +1,219 @@
+.. container::
+
+   We need to train new developers, and we need to make programming
+   approachable by more people, if only to get their attention before
+   they dive deeper. I'm not speaking anything new hear, but I think
+   there are some gaps in many of the common narratives.
+
+.. container::
+
+Narrative 1: We need to teach kids and more adults to program
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. container::
+
+   I agree! We need to get the attention of adults who might be
+   interested in a career change, and we need to capture the imagination
+   of children who can grow up and build the future software ecosystems
+   we'll use in our retirements.
+
+.. container::
+
+.. container::
+
+   But there is a gap in this narrative, between the learning to code
+   and the actually being an active experienced developer.
+
+.. container::
+
+.. container::
+
+   At least in many of these cases, education is given in some more
+   approachable fashion, but it isn't given in a way that a clear path
+   exists from start to finish. We hook them, and then we rely on a
+   common trait of developers to get them through the harder bits. I'm
+   going to use Python and games as an example, because it is a common
+   one. The Young Coders class is amazing, but I have a big problem with
+   it: we are setting these children up for major frustration and major
+   disappointment. We teach them to code in a wonderful language, on a
+   great environment that fosters creativity and experimentation. We
+   give them a comfortable start that pulls them in, hooks them, and
+   sets them on a path to self driven education beyond all the course
+   material.
+
+.. container::
+
+.. container::
+
+   They're going to leave these classes, already sold on everything they
+   learned, and realize they can't send these games to their friends
+   easier. They want to brag, and we won't let them. We've made it
+   harder on them. "Just go install Python, and PyGame, oh and PyOpenGL
+   because i used that, too. Then unzip my game and it should run!"
+   they're going to tell their friends, who will look at them strangely.
+
+.. container::
+
+.. container::
+
+   We can't start developers on a path with these kinds of walls.
+
+.. container::
+
+.. container::
+
+   Either we need to break down those walls (make distributing Python
+   projects with binary dependencies easier!) or we need to start them
+   down a different path (like web-based coding).
+
+Narrative 2: UNIX vs IDE Culture
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. container::
+
+   The war is old and the battles have been fought over all sorts of
+   territory, from compiler performance to language preferences to
+   testing methodologies. But, what is the distinction between these two
+   mindsets is really only beginning?
+
+.. container::
+
+.. container::
+
+   I have been firmly in the UNIX school for a long time, but i'm not
+   stranger to IDE culture, either. I started my programming education
+   with a stack of books from the library and seven Borland C++ floppies
+   from my cousin (software piracy for the 90s), before upgrading to an
+   actually purchased copy of Visual Studio 6.0, for I still have all my
+   installation media.
+
+.. container::
+
+.. container::
+
+   The narrative in this divide is between a developer who gets his
+   hands dirty and developers who let's the machine do the gritty parts
+   for them. The UNIX developer says the IDE devotee doesn't actually
+   understand what goes on "under the hood". The IDE developer says the
+   UNIX devotee wastes their time doing things manually and using
+   under-powered tools. But, both of these groups see themselves as
+   developers, and the others as "devotees", tied hopelessly to their
+   weird tools against all practical arguments.
+
+.. container::
+
+.. container::
+
+   If you ask a Python developer what a kid should use when getting
+   started, they aren't going to start talking about Git, VIM, or
+   writing setup.py files. They'll mention IDLE, where a student can
+   naturally shift from playing in the REPL to saving a script to run
+   against later. Where a natural progression will exist from those
+   first steps to writing a little game they save and run again when a
+   friend is near. But we don't look at IDLE as a "real" tool. For the
+   most part, we only look at it as a toy. No Python developer I know
+   looks at IDLE as a serious development tool that anyone should
+   continue using past the learning stage.
+
+.. container::
+
+.. container::
+
+   And this is basically how many of them look at IDEs and IDE culture,
+   as well. "Grow up and learn the command line options for the tools
+   your GUI has been hiding from you!" they'll say. And there is an idea
+   of power in this, that the IDE devotee is missing out on a deep well
+   of powerful tools and options at their finger tips. We'll make this
+   claim, and then go back to our garbage-collected, run-time compiled,
+   dynamically-typed language.
+
+.. _section-1:
+
+Narrative 3: Visual Programming is a Silly Toy
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. container::
+
+   While seen usually as a novelty, there are actually a huge number of
+   visual programming options around. The thing is, they exist with a
+   very two sided attitude from traditional developers. On the whole,
+   they are seen positively within specific contexts of learning and
+   education, but completely disregarded when suggested for "serious
+   work". You can see this mirrors the narrative from UNIX developers
+   towards IDE developers, and yet this attitude is common in both
+   camps.
+
+.. container::
+
+.. container::
+
+   Effectively there are no "real developers" who consider visual
+   programming viable for what they would call "real programming".
+
+.. container::
+
+.. container::
+
+   But who are the real developers and who gets to make that
+   distinction? What is real programming and how do we identify "toy
+   programming"? These aren't clear, and they serve largely so "other"
+   approaches we don't like, often for fairly emotional reasons more
+   than clear and practical ones.
+
+.. container::
+
+   It is true, there are obvious and often stark differences between a
+   stable, mature C codebase and a project file in Scratch. Clearly,
+   these are two very different things. But, we don't need to
+   extrapolate from this that all text-coded programming is inherently
+   better than any graphical-coded programming. We need to recognize a
+   cross over, and when we do we'll enable that intersection to grow.
+
+.. container::
+
+.. container::
+
+   Good IDEs and good toolsets are important, and visual programming may
+   be an extension of that. If this is the case, we may continue to
+   prefer our own style but we are being dishonest if we don't label it
+   as another camp in the same woods.
+
+.. container::
+
+   .. rubric:: 
+      :name: section-2
+
+   .. rubric:: Conclusion: Abstractions like visual programming are
+      poised to seize new ground
+      :name: conclusion-abstractions-like-visual-programming-are-poised-to-seize-new-ground
+
+.. container::
+
+   Look around you and you're going to see the writing on the wall.
+   You're going to see how much more powerful Scratch 2 is, how
+   intuitive the NoFlow project looks to make software crafting, and how
+   games like 
+
+| 
+  LittleBigPlanet have created whole communities of people who are
+  building software and don't even realize it.
+
+.. container::
+
+   Our walls are arbitrary. We look down on choices of text editor, on
+   the choice between text editor and IDE. The very fact that we define
+   a difference as if Emacs and Eclipse are so much different speaks
+   volumes for our ability to segment ourselves needlessly. We've done
+   the same with visual programming tools, and I think to their
+   detriment, restraining the passion of developers who would improve
+   them, and cutting off what could be a powerful avenue for whole new
+   classes of developers to join our ranks.
+
+.. container::
+
+.. container::
+
+   I don't think we've learned to create software, but we've been
+   prototyping the concept. There are fantastic possibilities when we
+   look at the tools we hold sacred in our craft as ephemeral as the
+   things we produce with them.
